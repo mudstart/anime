@@ -9,6 +9,11 @@ gem 'mysql2'
 
 gem 'json'
 
+gem 'devise'
+gem "paperclip", "~>2.0"
+gem "will_paginate"
+gem 'nokogiri'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -33,7 +38,7 @@ gem 'jquery-rails'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'ruby-debug'
