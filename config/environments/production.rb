@@ -65,8 +65,8 @@ AnimeErikkatCom::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  config.middleware.use ExceptionNotifier,
-    sender_address: 'noreply@erikkat.com',
-    exception_recipents: 'me.erik@me.com'
+  # config.middleware.use ExceptionNotifier,
+    # sender_address: 'noreply@erikkat.com',
+    # exception_recipents: 'me.erik@me.com'
 
 end
