@@ -65,6 +65,8 @@ GEM
       warden (~> 1.2.1)
     diff-lcs (1.2.2)
     erubis (2.7.0)
+    exception_notification (3.0.1)
+      actionmailer (>= 3.0.4)
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.6.0)
@@ -208,6 +210,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 3.2.1)
   devise
+  exception_notification
   guard-rspec
   high_voltage
   jquery-rails

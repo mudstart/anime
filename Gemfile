@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-ruby '1.8.7'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -14,6 +13,7 @@ gem "will_paginate"
 gem 'nokogiri'
 gem 'high_voltage'
 gem "twitter-bootstrap-rails"
+gem 'exception_notification'
 
 group :production do
   gem 'mysql2'  
