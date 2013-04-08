@@ -1,11 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
+ruby '1.8.7'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'mysql2'
 
 gem 'json'
 
@@ -13,6 +12,23 @@ gem 'devise'
 gem "paperclip", "~>2.0"
 gem "will_paginate"
 gem 'nokogiri'
+gem 'high_voltage'
+gem "twitter-bootstrap-rails"
+
+group :production do
+  gem 'mysql2'  
+end
+
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'sqlite3'
+end
+
+group :test do 
+  gem "guard-rspec"
+  gem 'rb-fsevent', '~> 0.9'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -21,7 +37,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end

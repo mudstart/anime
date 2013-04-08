@@ -1,4 +1,14 @@
 AnimeErikkatCom::Application.routes.draw do
+
+  resources :episodes
+
+
+  resources :shows
+
+  devise_for :users
+
+  root :to => 'high_voltage/pages#show', :id => 'homepage'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
