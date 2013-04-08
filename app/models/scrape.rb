@@ -5,7 +5,7 @@ class Scrape
   def self.show(url)
     scrape_show = Scrape.new(url)
     show = scrape_show.create_show
-    scrape_show.find_episodes
+    scrape_show.find_episodes(show.url)
 
     show
   end
@@ -15,7 +15,7 @@ class Scrape
   end
 
   def create_show
-    doc = open_url
+    doc = Nokogiri::HTML(open(@url))
     name_show_name = nil
     # Do funky things with it using Nokogiri::XML::Node methods...
 
@@ -30,8 +30,8 @@ class Scrape
     end
   end
 
-  def find_episodes
-    doc = open_url
+  def find_episodes(url)
+    doc = Nokogiri::HTML(open(url))
     episode_name = nil
 
     ####
@@ -45,13 +45,13 @@ class Scrape
       @show.episodes.create(:name => name, :url => url, :number => episode_number)
     end
 
+    doc.css('div#paging a').each do |next_page|
+      if next_page.content == 'Next»'
+        find_episodes(next_page['href'])
+      end      
+    end
+
     @show.episodes
-  end
-
-  private
-
-  def open_url
-    doc = Nokogiri::HTML(open(@url))
   end
 
 end

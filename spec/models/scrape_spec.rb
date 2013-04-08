@@ -14,4 +14,13 @@ describe Scrape do
       episode.number.should == 1
     end
   end
+
+  it "should have 25 episode for the show" do
+    show = Scrape.show("http://www.nwanime.com/2763/sword-art-online")
+
+    show.name.should == "Sword Art Online"
+    show.url.should == "http://www.nwanime.com/2763/sword-art-online"
+    show.episodes.count.should == 25
+
+  end
 end

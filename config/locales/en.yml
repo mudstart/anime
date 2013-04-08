@@ -3,3 +3,9 @@
 
 en:
   hello: "Hello world"
+  breadcrumbs:
+    application:
+      index: "Index"
+    examples:
+      index: "Examples"
+      show: "Example"

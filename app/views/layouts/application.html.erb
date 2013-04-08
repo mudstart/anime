@@ -48,6 +48,7 @@
           <div class="container-fluid nav-collapse">
             <ul class="nav">
               <li><%= link_to "Shows", shows_path  %></li>
+              <li><%= link_to "Episodes", episodes_path  %></li>
               <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete  %></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -69,6 +70,7 @@
         </div><!--/span-->
         <div class="span9">
           <%= bootstrap_flash %>
+          <%= render_breadcrumbs %>
           <%= yield %>
         </div>
       </div><!--/row-->

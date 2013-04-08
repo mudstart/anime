@@ -40,7 +40,7 @@ class ShowsController < ApplicationController
   # POST /shows
   # POST /shows.json
   def create
-    @show = Show.new(params[:show])
+    @show = Scrape.show(params[:show][:url])
 
     respond_to do |format|
       if @show.save
