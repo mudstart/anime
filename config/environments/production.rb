@@ -70,7 +70,9 @@ AnimeErikkatCom::Application.configure do
   config.action_mailer.raise_delivery_errors = true
 
   config.middleware.use ExceptionNotifier,
-    sender_address: 'noreply@erikkat.com',
-    exception_recipents: 'me.erik@me.com'
+    :email => {
+      sender_address: 'noreply@erikkat.com',
+      exception_recipents: 'me.erik@me.com'
+    }
 
 end
