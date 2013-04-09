@@ -1,0 +1,11 @@
+<ul class="thumbnails">
+  <% Episode.order('created_at ASC').limit(10).each do |episode| %>
+  <li class="span4">
+    <a href="<%= episode.url %>" class="thumbnail">
+        <h4><%= episode.name %></h3>
+        <p>Episode: <%= episode.number %></p>
+        <p>Posted: <%= episode.created_at.strftime('%m/%d/%Y') %></p>
+    </a>
+  </li>
+  <% end %>
+</ul>

@@ -1,0 +1,1937 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"friedn",
+				"friends_only"
+			],
+			[
+				"user",
+				"user_show"
+			],
+			[
+				"me",
+				"merge  (function)"
+			],
+			[
+				"module",
+				"modules"
+			],
+			[
+				"par",
+				"parital_path"
+			],
+			[
+				"opt",
+				"options"
+			],
+			[
+				"after",
+				"after_destroy"
+			],
+			[
+				"rec",
+				"receiver"
+			],
+			[
+				"notif",
+				"notification"
+			],
+			[
+				"notifi",
+				"notification_url"
+			],
+			[
+				"Blue",
+				"BluebagPermission"
+			],
+			[
+				"Ble",
+				"Bluebag"
+			],
+			[
+				"st",
+				"stack_ids"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"bl",
+				"blank"
+			],
+			[
+				"poster",
+				"email_post_to_followers"
+			],
+			[
+				"int",
+				"integer"
+			],
+			[
+				"des",
+				"description"
+			],
+			[
+				"post",
+				"postable"
+			],
+			[
+				"on",
+				"only"
+			],
+			[
+				"dis",
+				"disable_link"
+			],
+			[
+				"li",
+				"lip	link_to (path)"
+			],
+			[
+				"page",
+				"page_links"
+			],
+			[
+				"blu",
+				"bluebags"
+			],
+			[
+				"get",
+				"get_avatar"
+			],
+			[
+				"fo",
+				"followers"
+			],
+			[
+				"fol",
+				"follower"
+			],
+			[
+				"foll",
+				"followers"
+			],
+			[
+				"to",
+				"to_sentence  (function)"
+			],
+			[
+				"follow",
+				"follower"
+			],
+			[
+				"new",
+				"new_stack"
+			],
+			[
+				"pos",
+				"postable"
+			],
+			[
+				"bo",
+				"bookmarks"
+			],
+			[
+				"pend",
+				"pending_collaberators"
+			],
+			[
+				"coll",
+				"collaberators"
+			],
+			[
+				"all",
+				"all_collaberators"
+			],
+			[
+				"noti",
+				"notifications"
+			],
+			[
+				"last",
+				"last_active_at"
+			],
+			[
+				"la",
+				"lambda"
+			],
+			[
+				"us",
+				"user_with_stacks"
+			],
+			[
+				"re",
+				"respHead"
+			],
+			[
+				"in",
+				"includes"
+			],
+			[
+				"view",
+				"views"
+			],
+			[
+				"subsc",
+				"subscriber"
+			],
+			[
+				"sub",
+				"subscription_id  (function)"
+			],
+			[
+				"de",
+				"defs	def self .. end"
+			],
+			[
+				"stac",
+				"stack_aff"
+			],
+			[
+				"subs",
+				"subscribe"
+			],
+			[
+				"th",
+				"through"
+			],
+			[
+				"stack",
+				"stack_interest_category_bonus"
+			],
+			[
+				"cre",
+				"create"
+			],
+			[
+				"lo",
+				"localtime"
+			],
+			[
+				"creat",
+				"created_at"
+			],
+			[
+				"las",
+				"last_active_at"
+			],
+			[
+				"sh",
+				"shared_stack_bonus"
+			],
+			[
+				"crea",
+				"create"
+			],
+			[
+				"blueb",
+				"bluebag_permissions"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"do",
+				"dob	Insert do |variable| … end"
+			],
+			[
+				"up",
+				"update_attribute"
+			],
+			[
+				"day",
+				"days_ago"
+			],
+			[
+				"vi",
+				"viewed_stacks"
+			],
+			[
+				"use",
+				"username_downcase"
+			],
+			[
+				"username",
+				"username_downcase"
+			],
+			[
+				"l",
+				"lam	lambda { |args| .. }"
+			],
+			[
+				"sc",
+				"scope"
+			],
+			[
+				"em",
+				"email_invite"
+			],
+			[
+				"cure",
+				"current_user"
+			],
+			[
+				"current",
+				"current_user"
+			],
+			[
+				"curren",
+				"current_user"
+			],
+			[
+				"M",
+				"MIXPANEL"
+			],
+			[
+				"ex",
+				"exists"
+			],
+			[
+				"log",
+				"logd	logger.debug"
+			],
+			[
+				"im",
+				"img_url"
+			],
+			[
+				"img",
+				"img_url"
+			],
+			[
+				"pro",
+				"production"
+			],
+			[
+				"net",
+				"network_name"
+			],
+			[
+				"ne",
+				"network_name"
+			],
+			[
+				"word-",
+				"word-wrap:   (property)"
+			],
+			[
+				"po",
+				"postable"
+			],
+			[
+				"ia",
+				"image_url"
+			],
+			[
+				"be",
+				"be_valid"
+			],
+			[
+				"should",
+				"should_not"
+			],
+			[
+				"op",
+				"opengraph_image"
+			],
+			[
+				"path",
+				"path_hash"
+			],
+			[
+				"pa",
+				"path_hash"
+			],
+			[
+				"site",
+				"site_url"
+			],
+			[
+				"pin",
+				"pin_drag"
+			],
+			[
+				"append",
+				"appendTo"
+			],
+			[
+				"chi",
+				"chisels"
+			],
+			[
+				"hid",
+				"hidden_field_tag"
+			],
+			[
+				"chisel",
+				"chisels_used"
+			],
+			[
+				"has",
+				"has_many"
+			],
+			[
+				"curr",
+				"current_count"
+			],
+			[
+				"top_",
+				"top_pinned"
+			],
+			[
+				"top",
+				"top_pinned"
+			],
+			[
+				"posts",
+				"posts_order"
+			],
+			[
+				"u",
+				"update"
+			],
+			[
+				"mouse",
+				"mouseenter"
+			],
+			[
+				"mo",
+				"mouseover"
+			],
+			[
+				"glo",
+				"globalNavActive"
+			],
+			[
+				"shw",
+				"showLoader"
+			],
+			[
+				"show",
+				"showLoader"
+			],
+			[
+				"phone",
+				"phone1"
+			],
+			[
+				"p",
+				"phone"
+			],
+			[
+				"class",
+				"class_name"
+			],
+			[
+				"auth",
+				"authentications"
+			],
+			[
+				"tw",
+				"twitter_ids"
+			],
+			[
+				"A",
+				"Authentication"
+			],
+			[
+				"secret",
+				"secret_token"
+			],
+			[
+				"au",
+				"authentication"
+			],
+			[
+				"image",
+				"image_tag"
+			],
+			[
+				"email",
+				"email_invite"
+			],
+			[
+				"conta",
+				"container"
+			],
+			[
+				"containe",
+				"containers"
+			],
+			[
+				"text-",
+				"text-decoration:   (property)"
+			],
+			[
+				"destroy",
+				"destroy_all"
+			],
+			[
+				"els",
+				"else"
+			],
+			[
+				"def",
+				"def	def … end"
+			],
+			[
+				"object",
+				"object_url"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/pages/homepage.html.erb",
+			"settings":
+			{
+				"buffer_size": 352,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/shows/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 1219,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/scrape.rb",
+			"settings":
+			{
+				"buffer_size": 1356,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db/schema.rb",
+			"settings":
+			{
+				"buffer_size": 2578,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"be",
+				"BeautifyRuby"
+			],
+			[
+				"git ps",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git pu",
+				"Git: Pull Current Branch"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"rname",
+				"File: Rename"
+			],
+			[
+				"git pull",
+				"Git: Pull Current Branch"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"ranme",
+				"Snippet: randomize()"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"del",
+				"File: Delete"
+			],
+			[
+				"de",
+				"File: Delete"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"git st",
+				"Git: Show Tags"
+			],
+			[
+				"git ocm",
+				"Git: Custom Command"
+			],
+			[
+				"git",
+				"Git: Diff Tool All"
+			],
+			[
+				"bea",
+				"BeautifyRuby"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git ad",
+				"Git: Add..."
+			],
+			[
+				"git sa",
+				"Git: Status"
+			],
+			[
+				"renam",
+				"File: Rename"
+			],
+			[
+				"",
+				"BeautifyRuby"
+			],
+			[
+				"git add .",
+				"Git: Add..."
+			],
+			[
+				"ruby",
+				"BeautifyRuby"
+			],
+			[
+				"b",
+				"BeautifyRuby"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"forma",
+				"Format: Ruby"
+			],
+			[
+				"for",
+				"Format: Ruby"
+			],
+			[
+				"format",
+				"Format: Ruby"
+			],
+			[
+				"gt add",
+				"Git: Add..."
+			],
+			[
+				"fom",
+				"Format: Ruby"
+			],
+			[
+				"git psh",
+				"Git: Push"
+			],
+			[
+				"gi add",
+				"Git: Add..."
+			],
+			[
+				"coffee",
+				"Coffee: Check Syntax"
+			],
+			[
+				"gits",
+				"Git: Status"
+			],
+			[
+				"fo",
+				"Format: Ruby"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"g st",
+				"Git: Status"
+			],
+			[
+				"FORMA",
+				"Format: Ruby"
+			],
+			[
+				"git sta",
+				"Git: Stash Apply"
+			],
+			[
+				"git log",
+				"Git: Log All"
+			],
+			[
+				"gitch",
+				"Git: Commit history"
+			],
+			[
+				"gitadd",
+				"Git: Add..."
+			],
+			[
+				"git a",
+				"Git: Add..."
+			],
+			[
+				"fmor",
+				"FTPSync: Browse from current folder"
+			],
+			[
+				"git stash",
+				"Git: Stash Changes"
+			],
+			[
+				"git lo",
+				"Git: Log All"
+			],
+			[
+				"git commi",
+				"Git: Commit"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"gitpush",
+				"Git: Push"
+			],
+			[
+				"git pul",
+				"Git: Pull"
+			],
+			[
+				"git diff",
+				"Git: Diff Tool Current File"
+			],
+			[
+				"package",
+				"Package Control: Discover Packages"
+			],
+			[
+				"coff",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"check",
+				"Coffee: Check Syntax"
+			],
+			[
+				"chec",
+				"Coffee: Check Syntax"
+			],
+			[
+				"check ",
+				"Coffee: Check Syntax"
+			],
+			[
+				"cof",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"git q c",
+				"Git: Quick Commit"
+			],
+			[
+				"git q",
+				"Git: Quick Commit"
+			],
+			[
+				"git stas",
+				"Git: Stash Apply"
+			],
+			[
+				"stash",
+				"Git: Stash Drop"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"git q co",
+				"Git: Quick Commit"
+			],
+			[
+				"git p",
+				"Git: Pull"
+			],
+			[
+				"git amm",
+				"Git: Amend Commit"
+			],
+			[
+				"git ",
+				"Git: Amend Commit"
+			],
+			[
+				"git cmm",
+				"Git: Commit"
+			],
+			[
+				" git push",
+				"Git: Push"
+			],
+			[
+				"packages",
+				"Package Control: List Packages"
+			],
+			[
+				"RENAME",
+				"File: Rename"
+			],
+			[
+				"gitq",
+				"Git: Quick Commit"
+			],
+			[
+				"commet",
+				"Toggle Block Comment"
+			],
+			[
+				"git lg",
+				"Git: Log All"
+			],
+			[
+				"git q ",
+				"Git: Quick Commit"
+			],
+			[
+				"coffe",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"diff",
+				"Git: Diff Tool Current File"
+			],
+			[
+				"git his",
+				"Git: Commit history"
+			],
+			[
+				"git di",
+				"Git: Diff Current File"
+			],
+			[
+				"displa",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"co",
+				"Coffee: Run Script"
+			],
+			[
+				"git r",
+				"Git: Reset (hard) HEAD"
+			],
+			[
+				"git re",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"git  push",
+				"Git: Push"
+			],
+			[
+				"dif",
+				"Git: Diff Current File"
+			],
+			[
+				"git q comm",
+				"Git: Quick Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"comment",
+				"Toggle Block Comment"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"rake",
+				"Package Control: Install Package"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: a",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/erikguzman/Projects/blue/app/views/posts/_post_form_textbox.html.erb",
+		"/Users/erikguzman/Projects/blue/app/helpers/notification_helper.rb",
+		"/Users/erikguzman/Projects/blue/app/views/global_searches/show.js",
+		"/Users/erikguzman/Projects/blue/app/views/global_searches/items/_bluebag.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/global_searches/items/_post.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/global_searches/items/_user.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/layouts/_topnav.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notification_activity/topbar_notifications/_sub_relationship.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notifications/_notification_popover.html.erb",
+		"/Users/erikguzman/Projects/blue/app/modules/notification_activity.rb",
+		"/Users/erikguzman/Projects/blue/app/controllers/application_controller.rb",
+		"/Users/erikguzman/Projects/blue/app/helpers/bluebags_helper.rb",
+		"/Users/erikguzman/Projects/blue/app/controllers/global_searches_controller.rb",
+		"/Users/erikguzman/Projects/blue/app/views/global_searches/_global_search_results.html.erb",
+		"/Users/erikguzman/Projects/blue/app/models/bluebag.rb",
+		"/Users/erikguzman/Projects/blue/app/helpers/global_searches_helper.rb",
+		"/Users/erikguzman/Projects/blue/config/database.yml",
+		"/Users/erikguzman/Projects/blue/Gemfile",
+		"/Users/erikguzman/Projects/blue/app/models/post.rb",
+		"/Users/erikguzman/Projects/blue/app/views/global_searches/_form.html.erb",
+		"/Users/erikguzman/Projects/blue/app/assets/javascripts/application.js.erb",
+		"/Users/erikguzman/Projects/blue/config/routes.rb",
+		"/Users/erikguzman/Projects/blue/app/views/global_search/show.js",
+		"/Users/erikguzman/Projects/blue/app/views/global_search/_form.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/global_search/_global_search_results.html.erb",
+		"/Users/erikguzman/Projects/blue/spec/controllers/global_searches_controller_spec.rb",
+		"/Users/erikguzman/Projects/blue/spec/controllers/global_search_controller_spec.rb",
+		"/Users/erikguzman/Projects/blue/app/helpers/global_search_helper.rb",
+		"/Users/erikguzman/Projects/blue/app/controllers/global_search_controller.rb",
+		"/Users/erikguzman/Projects/blue/app/views/bluebags/_bag_search_form.html.erb",
+		"/Users/erikguzman/Projects/blue/app/assets/javascripts/bluebags.js.coffee",
+		"/Users/erikguzman/Projects/blue/app/views/global_search/show.html",
+		"/Users/erikguzman/Projects/blue/app/views/global_search/_search_result.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/shared/_search_result.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/global_search/items/_user.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/shared/_search_result_posts.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/shared/_search_result_spaces.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/shared/_search_result_user.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/pages/test3.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/sub_relationships/destroy.js.erb",
+		"/Users/erikguzman/Projects/blue/app/views/pages/user_show.js.erb",
+		"/Users/erikguzman/Projects/blue/app/models/notification.rb",
+		"/Users/erikguzman/Projects/blue/app/models/delayed_jobs.rb",
+		"/Users/erikguzman/Projects/blue/app/views/layouts/application.html.erb",
+		"/Users/erikguzman/Projects/blue/config/application.rb",
+		"/Users/erikguzman/Projects/blue/config/environment.rb",
+		"/Users/erikguzman/Projects/blue/script/rails",
+		"/Users/erikguzman/Projects/blue/script/delayed_job",
+		"/Users/erikguzman/Projects/blue/private_pub.ru",
+		"/Users/erikguzman/Projects/blue/app/views/notifications/popover_notifications.js.erb",
+		"/Users/erikguzman/Projects/blue/app/views/layouts/_mobilenav.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notifications/_notifications_index.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notifications/_notification_popover_viewall.html.erb",
+		"/Users/erikguzman/Projects/blue/app/helpers/bluebag_permissions_helper.rb",
+		"/Users/erikguzman/Projects/blue/app/views/sub_relationships/create.js.erb",
+		"/Users/erikguzman/Projects/blue/app/controllers/users_controller.rb",
+		"/Users/erikguzman/Projects/blue/app/controllers/bluebags_controller.rb",
+		"/Users/erikguzman/Projects/blue/app/controllers/posts_controller.rb",
+		"/Users/erikguzman/Projects/blue/app/controllers/pages_controller.rb",
+		"/Users/erikguzman/Projects/blue/app/controllers/notifications_controller.rb",
+		"/Users/erikguzman/Projects/blue/app/views/notifications/_notification_activity_item.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notifications/index.js.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notification_activity/_comment.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notification_activity/_like.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notification_activity/_mention.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notification_activity/topbar_notifications/_comment.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notification_activity/topbar_notifications/_bluebag_permission.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notifications/index.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notification_activity/topbar_notifications/_bluebag.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notification_activity/topbar_notifications/_like.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notification_activity/topbar_notifications/_mention.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notification_activity/topbar_notifications/_post.html.erb",
+		"/Users/erikguzman/Projects/blue/config.ru",
+		"/Users/erikguzman/Projects/blue/app/helpers/notification_activity.rb",
+		"/Users/erikguzman/Projects/blue/app/views/pages/home.js.erb",
+		"/Users/erikguzman/Projects/blue/app/views/shared/_notification.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notifications/_notification.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/notification_activity/topbar_notifications/_blue_item.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/bluebags/index.js.erb",
+		"/Users/erikguzman/Projects/blue/app/helpers/notification_manager.rb",
+		"/Users/erikguzman/Projects/blue/app/views/shared/_nav_content_bags.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/blue_items/index.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/bluebags/_bag_nav_list_item.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/layouts/newhome.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/layouts/_nav.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/shared/_notification_popover.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/pages/_homepage.html.erb",
+		"/Users/erikguzman/Projects/blue/app/models/user.rb",
+		"/Users/erikguzman/Projects/blue/app/controllers/sub_relationships_controller.rb",
+		"/Users/erikguzman/Projects/blue/app/views/shared/_settings_popover.html.erb",
+		"/Users/erikguzman/Projects/blue/app/helpers/twitter_integration.rb",
+		"/Users/erikguzman/Projects/blue/app/views/sub_relationships/following.js.erb",
+		"/Users/erikguzman/Projects/blue/app/views/sub_relationships/following_search.js.erb",
+		"/Users/erikguzman/Projects/blue/app/views/sub_relationships/followers.js.erb",
+		"/Users/erikguzman/Projects/blue/app/views/sub_relationships/followers_search.js.erb",
+		"/Users/erikguzman/Projects/blue/app/views/sub_relationships/super_followers_search.js.erb",
+		"/Users/erikguzman/Projects/blue/app/models/bluebag_permission.rb",
+		"/Users/erikguzman/Projects/blue/app/models/mention.rb",
+		"/Users/erikguzman/Projects/blue/app/mailers/user_mailer.rb",
+		"/Users/erikguzman/Projects/blue/app/views/user_mailer/new_user_subscription.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/user_mailer/friends_on_chisel.html.erb",
+		"/Users/erikguzman/Projects/blue/app/models/notification_observer.rb",
+		"/Users/erikguzman/Projects/blue/app/views/user_mailer/collect_your_item_notification.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/user_mailer/comment_on_your_item_notification.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/user_mailer/indirect_collect_your_item_notification.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/user_mailer/liked_your_object_notificaiton.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/user_mailer/someone_also_commented_on_item_notification.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/user_mailer/mentioned_notificaiton.html.erb",
+		"/Users/erikguzman/Projects/blue/app/models/blue_item.rb",
+		"/Users/erikguzman/Projects/blue/app/models/sub_relationship.rb",
+		"/Users/erikguzman/Projects/blue/app/models/comment.rb",
+		"/Users/erikguzman/Projects/blue/app/models/like.rb",
+		"/Users/erikguzman/Projects/blue/config/environments/development.rb",
+		"/Users/erikguzman/Projects/blue/config/environments/production.rb",
+		"/Users/erikguzman/Projects/blue/app/models/product.rb",
+		"/Users/erikguzman/Projects/blue/app/views/user_mailer/sale_price_change_notification.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/user_mailer/new_message_notification.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/user_mailer/new_inquiry_notification.html.erb",
+		"/Users/erikguzman/Projects/blue/lib/tasks/init_last_activity_at_for_stack.rake",
+		"/Users/erikguzman/Projects/blue/lib/tasks/users_unfollow_unviewed_stacks.rake",
+		"/Users/erikguzman/Projects/blue/config/initializers/intercom.rb",
+		"/Users/erikguzman/Projects/blue/config/initializers/mixpanel.rb",
+		"/Users/erikguzman/Projects/blue/app/views/global_search/items/_post.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/global_search/items/_bluebag.html.erb",
+		"/Users/erikguzman/Projects/blue/solr/conf/schema.xml",
+		"/Users/erikguzman/Projects/blue/app/views/global_search/items/user.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/global_search/items/bluebag.html.erb",
+		"/Users/erikguzman/Projects/blue/app/views/global_search/items/post.html.erb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"url",
+			"user_signed_in?",
+			"create_locals_hash",
+			"80",
+			"110",
+			"100",
+			"truncate(word, :length => 10 )",
+			"length: 10",
+			"40",
+			"*",
+			"word}",
+			"hit",
+			"location",
+			"bag_search_form",
+			"Search posts, spaces, and people",
+			"search_nav_content",
+			"live_search_form",
+			"Search posts, spaces, and people",
+			"  def total_pending_requests\n    current_user.pending_permissions.count \n    + current_user.pending_sent_bluebag_invitations.count \n    + current_user.pending_bluebag_permissions_created.count\n  end",
+			"@bluebags",
+			"should_redirect",
+			"globalNavActive",
+			"50",
+			"do",
+			"shared_user_id",
+			"friend",
+			"add_to_base",
+			"current_user",
+			"url",
+			"notification",
+			"print_notification_action",
+			"notification.notifiable.link_path(current_user)",
+			", :host => Blue::Application::DEFAULT_URL",
+			"Rails.application.routes.url_helpers",
+			"self",
+			", :host => Blue::Application::DEFAULT_URL",
+			"Rails.application.routes.url_helpers.",
+			"self",
+			", :host => Blue::Application::DEFAULT_URL",
+			"Rails.application.routes.url_helpers.",
+			"notification.notifiable",
+			"MIXPANEL_TOKEN",
+			"notification",
+			"post",
+			"selected",
+			"auto_follow_stacks",
+			"bookmark_and_subscribe",
+			"generate_cached_routes",
+			"ruby",
+			"ignore_recommended_stack",
+			"text-decoration",
+			"text",
+			"accepted_share",
+			"50px",
+			"names",
+			"contained_in",
+			"no_match_interest",
+			"include?",
+			"submit",
+			"cached_routes",
+			"createFlightNotification",
+			"createflight",
+			"all_bluebags",
+			"Time.now",
+			"pin_chisel",
+			"can_chisel_post",
+			"twitter",
+			".includes",
+			":users, :likes",
+			"commentable",
+			"analytics = Analytics.new",
+			"bags",
+			"		user.bags.count.should eq 1\nset_active_at",
+			"username",
+			"jquery",
+			"last_checked_messages_at",
+			", do ",
+			", do",
+			"activity_update",
+			"user",
+			", :length => 50, :omission => '...'",
+			"truncate",
+			"json",
+			"Loaded",
+			"5",
+			"friend",
+			"route",
+			"OTHER_VIDEO_TYPE",
+			"format.json",
+			"got a fan",
+			"pin_chisel",
+			"post",
+			"chisel[]",
+			"bag_posts_container",
+			"section_ajax_",
+			"tool",
+			"tooltipOnHover",
+			"tooltipy",
+			"termsofservice",
+			"term",
+			"createflight",
+			"removeFlightNotification",
+			"notice_close",
+			"global",
+			"this",
+			"activeNavListClick",
+			"nav_list_item",
+			"image_path",
+			"loader",
+			"trigger",
+			"home_nav",
+			"nav_list_item",
+			"main_content_inner_container",
+			"ajax-loader.gif",
+			"backClickedHistoryEvent",
+			"history",
+			"a.history",
+			"rescue",
+			"phone1",
+			"errors",
+			"root",
+			"ruby",
+			"API.",
+			"API",
+			"user.",
+			"user",
+			"end",
+			"posts"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"post_"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/pages/homepage.html.erb",
+					"settings":
+					{
+						"buffer_size": 352,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								110,
+								110
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/shows/show.html.erb",
+					"settings":
+					{
+						"buffer_size": 1219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								770,
+								770
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/models/scrape.rb",
+					"settings":
+					{
+						"buffer_size": 1356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								297,
+								297
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "db/schema.rb",
+					"settings":
+					{
+						"buffer_size": 2578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.coffeecompile_output":
+	{
+		"height": 94.0
+	},
+	"output.exec":
+	{
+		"height": 115.0
+	},
+	"output.git":
+	{
+		"height": 156.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"sche",
+				"db/schema.rb"
+			],
+			[
+				"scr",
+				"app/models/scrape.rb"
+			],
+			[
+				"showshow",
+				"app/views/shows/show.html.erb"
+			],
+			[
+				"page",
+				"app/views/pages/homepage.html.erb"
+			],
+			[
+				"nic",
+				"app/assets/javascripts/nicEdit.js"
+			],
+			[
+				"test",
+				"app/views/pages/test.html.erb"
+			],
+			[
+				"postform",
+				"app/views/posts/_post_form_textbox.html.erb"
+			],
+			[
+				"appjs",
+				"app/assets/javascripts/application.js.erb"
+			],
+			[
+				"appcon",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"notac",
+				"app/modules/notification_activity.rb"
+			],
+			[
+				"_notification_popover.html.erb",
+				"app/views/notifications/_notification_popover.html.erb"
+			],
+			[
+				"topsubr",
+				"app/views/notification_activity/topbar_notifications/_sub_relationship.html.erb"
+			],
+			[
+				"topm",
+				"app/views/layouts/_topnav.html.erb"
+			],
+			[
+				"globalsearchform",
+				"app/views/global_searches/_form.html.erb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"bluebag",
+				"app/models/bluebag.rb"
+			],
+			[
+				"glohep",
+				"app/helpers/global_searches_helper.rb"
+			],
+			[
+				"post",
+				"app/models/post.rb"
+			],
+			[
+				"blueb",
+				"app/models/bluebag.rb"
+			],
+			[
+				"bluehelper",
+				"app/helpers/bluebags_helper.rb"
+			],
+			[
+				"globalhelp",
+				"app/helpers/global_searches_helper.rb"
+			],
+			[
+				"global",
+				"spec/controllers/global_search_controller_spec.rb"
+			],
+			[
+				"bluebjs",
+				"app/assets/javascripts/bluebags.js.coffee"
+			],
+			[
+				"appljs",
+				"app/assets/javascripts/application.js.erb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"globshow",
+				"app/views/global_search/show.html"
+			],
+			[
+				"gloshow",
+				"app/views/global_search/show.js"
+			],
+			[
+				"notifia",
+				"app/modules/notification_activity.rb"
+			],
+			[
+				"sharedresut",
+				"app/views/shared/_search_result.html.erb"
+			],
+			[
+				"test3",
+				"app/views/pages/test3.html.erb"
+			],
+			[
+				"layouttop",
+				"app/views/layouts/_topnav.html.erb"
+			],
+			[
+				"subdes",
+				"app/views/sub_relationships/destroy.js.erb"
+			],
+			[
+				"layoutapp",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"private",
+				"private_pub.ru"
+			],
+			[
+				"delayed",
+				"app/models/delayed_jobs.rb"
+			],
+			[
+				"noti",
+				"app/models/notification.rb"
+			],
+			[
+				"usershow",
+				"app/views/pages/user_show.js.erb"
+			],
+			[
+				"mobi",
+				"app/views/layouts/_mobilenav.html.erb"
+			],
+			[
+				"notipop",
+				"app/views/notifications/_notification_popover.html.erb"
+			],
+			[
+				"notificationjs",
+				"app/views/notifications/popover_notifications.js.erb"
+			],
+			[
+				"notihelp",
+				"app/helpers/notification_helper.rb"
+			],
+			[
+				"notpop",
+				"app/views/notifications/_notification_popover_viewall.html.erb"
+			],
+			[
+				"pop",
+				"app/views/notifications/popover_notifications.js.erb"
+			],
+			[
+				"bluepehelp",
+				"app/helpers/bluebag_permissions_helper.rb"
+			],
+			[
+				"notifiindex",
+				"app/views/notifications/_notifications_index.html.erb"
+			],
+			[
+				"user",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"blue",
+				"app/controllers/bluebags_controller.rb"
+			],
+			[
+				"pagescon",
+				"app/controllers/pages_controller.rb"
+			],
+			[
+				"bluecon",
+				"app/controllers/bluebags_controller.rb"
+			],
+			[
+				"postcon",
+				"app/controllers/posts_controller.rb"
+			],
+			[
+				"appcontrol",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"notcon",
+				"app/controllers/notifications_controller.rb"
+			],
+			[
+				"layout",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"subrecreate",
+				"app/views/sub_relationships/create.js.erb"
+			],
+			[
+				"notiindexjs",
+				"app/views/notifications/index.js.erb"
+			],
+			[
+				"notiindex",
+				"app/views/notifications/_notifications_index.html.erb"
+			],
+			[
+				"notindex",
+				"app/views/notifications/_notifications_index.html.erb"
+			],
+			[
+				"notifipop",
+				"app/views/notifications/_notification_popover.html.erb"
+			],
+			[
+				"notifpop",
+				"app/views/notifications/_notification_popover.html.erb"
+			],
+			[
+				"popover",
+				"app/views/notifications/popover_notifications.js.erb"
+			],
+			[
+				"config",
+				"config/application.rb"
+			],
+			[
+				"appcontr",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"notificon",
+				"app/controllers/notifications_controller.rb"
+			],
+			[
+				"notificaipop",
+				"app/views/notifications/_notification_popover.html.erb"
+			],
+			[
+				"popoverno",
+				"app/views/notifications/popover_notifications.js.erb"
+			],
+			[
+				"notification_ac",
+				"app/helpers/notification_activity.rb"
+			],
+			[
+				"notifica",
+				"app/models/notification.rb"
+			],
+			[
+				"notificationhelper",
+				"app/helpers/notification_helper.rb"
+			],
+			[
+				"topbar",
+				"app/views/notification_activity/topbar_notifications/_sub_relationship.html.erb"
+			],
+			[
+				"notificationactivityitem",
+				"app/views/notifications/_notification_activity_item.html.erb"
+			],
+			[
+				"notification",
+				"app/views/notifications/_notifications_index.html.erb"
+			],
+			[
+				"notificaion",
+				"app/views/notifications/_notification.html.erb"
+			],
+			[
+				"notipo",
+				"app/views/notifications/_notification_popover.html.erb"
+			],
+			[
+				"topbarnotifi",
+				"app/views/notification_activity/topbar_notifications/_blue_item.html.erb"
+			],
+			[
+				"notificpop",
+				"app/views/notifications/_notification_popover.html.erb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"da",
+				"config/database.yml"
+			],
+			[
+				"blecon",
+				"app/controllers/bluebags_controller.rb"
+			],
+			[
+				"blueindex",
+				"app/views/bluebags/index.js.erb"
+			],
+			[
+				"bluebajs",
+				"app/assets/javascripts/bluebags.js.coffee"
+			],
+			[
+				"javablue",
+				"app/assets/javascripts/bluebags.js.coffee"
+			],
+			[
+				"navco",
+				"app/views/shared/_nav_content_bags.html.erb"
+			],
+			[
+				"nav",
+				"app/views/layouts/_nav.html.erb"
+			],
+			[
+				"bl",
+				"app/views/bluebags/_bag_nav_list_item.html.erb"
+			],
+			[
+				"mobile",
+				"app/views/layouts/_mobilenav.html.erb"
+			],
+			[
+				"blueh",
+				"app/helpers/bluebags_helper.rb"
+			],
+			[
+				"hoe",
+				"app/views/pages/home.js.erb"
+			],
+			[
+				"sharedno",
+				"app/views/shared/_notification_popover.html.erb"
+			],
+			[
+				"topcom",
+				"app/views/notification_activity/topbar_notifications/_comment.html.erb"
+			],
+			[
+				"toplike",
+				"app/views/notification_activity/topbar_notifications/_like.html.erb"
+			],
+			[
+				"topmention",
+				"app/views/notification_activity/topbar_notifications/_mention.html.erb"
+			],
+			[
+				"topn",
+				"app/views/layouts/_topnav.html.erb"
+			],
+			[
+				"_home",
+				"app/views/pages/_homepage.html.erb"
+			],
+			[
+				"topbarlike",
+				"app/views/notification_activity/topbar_notifications/_like.html.erb"
+			],
+			[
+				"notifcationcon",
+				"app/controllers/notifications_controller.rb"
+			],
+			[
+				"settingp",
+				"app/views/shared/_settings_popover.html.erb"
+			],
+			[
+				"twi",
+				"app/helpers/twitter_integration.rb"
+			],
+			[
+				"following",
+				"app/views/sub_relationships/following.js.erb"
+			],
+			[
+				"followingsearch",
+				"app/views/sub_relationships/following_search.js.erb"
+			],
+			[
+				"followers",
+				"app/views/sub_relationships/followers.js.erb"
+			],
+			[
+				"followersse",
+				"app/views/sub_relationships/followers_search.js.erb"
+			],
+			[
+				"superfol",
+				"app/views/sub_relationships/super_followers_search.js.erb"
+			],
+			[
+				"subrle",
+				"app/controllers/sub_relationships_controller.rb"
+			],
+			[
+				"notificatoiac",
+				"app/views/notifications/_notification_activity_item.html.erb"
+			],
+			[
+				"usecontrol",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"subcreae",
+				"app/views/sub_relationships/create.js.erb"
+			],
+			[
+				"friends_on_chisel",
+				"app/views/user_mailer/friends_on_chisel.html.erb"
+			],
+			[
+				"newuser",
+				"app/views/user_mailer/new_user_subscription.html.erb"
+			],
+			[
+				"bluebagperm",
+				"app/models/bluebag_permission.rb"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"usermailer.",
+				"app/mailers/user_mailer.rb"
+			],
+			[
+				"mention",
+				"app/models/mention.rb"
+			],
+			[
+				"pro",
+				"config/environments/production.rb"
+			],
+			[
+				"deve",
+				"config/environments/development.rb"
+			],
+			[
+				"rod",
+				"config/environments/production.rb"
+			],
+			[
+				"prod",
+				"config/environments/production.rb"
+			],
+			[
+				"notifi",
+				"app/models/notification.rb"
+			],
+			[
+				"delay",
+				"app/models/delayed_jobs.rb"
+			],
+			[
+				"men",
+				"app/models/mention.rb"
+			],
+			[
+				"blueite",
+				"app/models/blue_item.rb"
+			],
+			[
+				"bluebper",
+				"app/models/bluebag_permission.rb"
+			],
+			[
+				"subrela",
+				"app/models/sub_relationship.rb"
+			],
+			[
+				"commentr",
+				"app/models/comment.rb"
+			],
+			[
+				"like",
+				"app/models/like.rb"
+			],
+			[
+				"noth",
+				"app/helpers/notification_helper.rb"
+			],
+			[
+				"notific",
+				"app/models/notification_observer.rb"
+			],
+			[
+				"rake",
+				"lib/tasks/init_last_activity_at_for_stack.rake"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 294.0,
+	"status_bar_visible": true
+}
