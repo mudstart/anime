@@ -61,10 +61,10 @@
         <div class="span3">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
-              <li class="nav-header">New Episodes</li>
-              <li><%= link_to "Link1", "/path1"  %></li>
-              <li><%= link_to "Link2", "/path2"  %></li>
-              <li><%= link_to "Link3", "/path3"  %></li>
+              <li class="nav-header">Anime Show</li>
+              <% AnimeShow.all.each do |anime| %>
+                <li><%= link_to anime.name, anime  %></li>
+              <% end %>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->

@@ -31,9 +31,12 @@ class Scrape
     end
 
     description = doc.at_css('div#category_desc').content
+    style = doc.at_css('div.moduleEntryThumb-med')['style']
+    style.match(/\((.*)\)/m)[0]
+    image_url = $1
 
     if name_show_name
-      @show = AnimeShow.create(:name => name_show_name, :description => description,:url => @url)
+      @show = AnimeShow.create(:name => name_show_name, :description => description,:url => @url, :image_url => image_url)
     end
   end
 
@@ -48,6 +51,9 @@ class Scrape
       name = found_episode.content
       ep_url = found_episode['href']
       episode_number = name.split(' ').last
+
+      episode.at_css('img.moduleEntryThumb-med')['style'].match(/\((.*)\)/m)[0]
+      image_url = $1
 
       @show.episodes.create(:name => name, :url => ep_url, :number => episode_number)
     end
