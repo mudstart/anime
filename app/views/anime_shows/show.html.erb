@@ -1,0 +1,19 @@
+<div class="hero-unit">
+  <h1><%= @anime_show.name %></h1>
+  <p><span class="label label-info">Source:</span><%=  link_to @anime_show.url %></p>
+  <p><%= @anime_show.description %></p>
+  <p>
+    <%= link_to "Edit Info", edit_anime_show_path(@anime_show), :class => "btn btn-primary" %>
+  </p>
+</div>
+<ul class="thumbnails">
+  <% @anime_show.episodes.each do |episode| %>
+  <li class="span4">
+    <a href="<%= episode.url %>" class="thumbnail">
+        <h4><%= episode.name %></h3>
+        <p>Episode: <%= episode.number %></p>
+        <p>Posted: <%= episode.created_at.strftime('%m/%d/%Y') %></p>
+    </a>
+  </li>
+  <% end %>
+</ul>

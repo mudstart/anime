@@ -58,6 +58,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    columnize (0.3.6)
     devise (2.2.3)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
@@ -90,6 +91,8 @@ GEM
       thor (>= 0.14, < 2.0)
     json (1.7.7)
     libv8 (3.11.8.17)
+    linecache (0.46)
+      rbx-require-relative (> 0.0.4)
     listen (0.7.3)
     lumberjack (1.0.3)
     mail (2.5.3)
@@ -143,6 +146,7 @@ GEM
       thor (>= 0.14.6, < 2.0)
     rake (10.0.4)
     rb-fsevent (0.9.3)
+    rbx-require-relative (0.0.9)
     rdoc (3.12.2)
       json (~> 1.4)
     ref (1.0.4)
@@ -161,6 +165,11 @@ GEM
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
       rspec-mocks (~> 2.13.0)
+    ruby-debug (0.10.4)
+      columnize (>= 0.1)
+      ruby-debug-base (~> 0.10.4.0)
+    ruby-debug-base (0.10.4)
+      linecache (>= 0.3)
     rubyzip (0.9.9)
     sass (3.2.7)
     sass-rails (3.2.6)
@@ -221,6 +230,7 @@ DEPENDENCIES
   rails (= 3.2.13)
   rb-fsevent (~> 0.9)
   rspec-rails
+  ruby-debug
   sass-rails (~> 3.2.3)
   sqlite3
   therubyracer

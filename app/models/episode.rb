@@ -1,7 +1,7 @@
 class Episode < ActiveRecord::Base
-  belongs_to :show
+  belongs_to :anime_show
   attr_accessible :name, :number, :url
 
-  validates :name, :number, :url, :presence => true
-  validates :number, :uniqueness => true
+  validates :name, :number, :url, :anime_show_id, :presence => true
+  validates :number, :uniqueness => { :scope => :anime_show_id }
 end

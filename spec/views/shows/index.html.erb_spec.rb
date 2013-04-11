@@ -3,11 +3,11 @@ require 'spec_helper'
 describe "shows/index" do
   before(:each) do
     assign(:shows, [
-      stub_model(Show,
+      stub_model(AnimeShow,
         :url => "MyText",
         :name => "Name"
       ),
-      stub_model(Show,
+      stub_model(AnimeShow,
         :url => "MyText",
         :name => "Name"
       )

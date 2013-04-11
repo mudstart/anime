@@ -24,7 +24,7 @@ describe AnimeShowsController do
   # AnimeShow. As you add validations to AnimeShow, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    { "url" => "MyText" }
+    {  }
   end
 
   # This should return the minimal set of values that should be in the session
@@ -35,33 +35,33 @@ describe AnimeShowsController do
   end
 
   describe "GET index" do
-    it "assigns all shows as @shows" do
-      show = AnimeShow.create! valid_attributes
+    it "assigns all anime_shows as @anime_shows" do
+      anime_show = AnimeShow.create! valid_attributes
       get :index, {}, valid_session
-      assigns(:shows).should eq([show])
+      assigns(:anime_shows).should eq([anime_show])
     end
   end
 
   describe "GET show" do
-    it "assigns the requested show as @show" do
-      show = AnimeShow.create! valid_attributes
-      get :show, {:id => show.to_param}, valid_session
-      assigns(:show).should eq(show)
+    it "assigns the requested anime_show as @anime_show" do
+      anime_show = AnimeShow.create! valid_attributes
+      get :show, {:id => anime_show.to_param}, valid_session
+      assigns(:anime_show).should eq(anime_show)
     end
   end
 
   describe "GET new" do
-    it "assigns a new show as @show" do
+    it "assigns a new anime_show as @anime_show" do
       get :new, {}, valid_session
-      assigns(:show).should be_a_new(AnimeShow)
+      assigns(:anime_show).should be_a_new(AnimeShow)
     end
   end
 
   describe "GET edit" do
-    it "assigns the requested show as @show" do
-      show = AnimeShow.create! valid_attributes
-      get :edit, {:id => show.to_param}, valid_session
-      assigns(:show).should eq(show)
+    it "assigns the requested anime_show as @anime_show" do
+      anime_show = AnimeShow.create! valid_attributes
+      get :edit, {:id => anime_show.to_param}, valid_session
+      assigns(:anime_show).should eq(anime_show)
     end
   end
 
@@ -69,34 +69,34 @@ describe AnimeShowsController do
     describe "with valid params" do
       it "creates a new AnimeShow" do
         expect {
-          post :create, {:show => valid_attributes}, valid_session
+          post :create, {:anime_show => valid_attributes}, valid_session
         }.to change(AnimeShow, :count).by(1)
       end
 
-      it "assigns a newly created show as @show" do
-        post :create, {:show => valid_attributes}, valid_session
-        assigns(:show).should be_a(AnimeShow)
-        assigns(:show).should be_persisted
+      it "assigns a newly created anime_show as @anime_show" do
+        post :create, {:anime_show => valid_attributes}, valid_session
+        assigns(:anime_show).should be_a(AnimeShow)
+        assigns(:anime_show).should be_persisted
       end
 
-      it "redirects to the created show" do
-        post :create, {:show => valid_attributes}, valid_session
+      it "redirects to the created anime_show" do
+        post :create, {:anime_show => valid_attributes}, valid_session
         response.should redirect_to(AnimeShow.last)
       end
     end
 
     describe "with invalid params" do
-      it "assigns a newly created but unsaved show as @show" do
+      it "assigns a newly created but unsaved anime_show as @anime_show" do
         # Trigger the behavior that occurs when invalid params are submitted
         AnimeShow.any_instance.stub(:save).and_return(false)
-        post :create, {:show => { "url" => "invalid value" }}, valid_session
-        assigns(:show).should be_a_new(AnimeShow)
+        post :create, {:anime_show => {  }}, valid_session
+        assigns(:anime_show).should be_a_new(AnimeShow)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         AnimeShow.any_instance.stub(:save).and_return(false)
-        post :create, {:show => { "url" => "invalid value" }}, valid_session
+        post :create, {:anime_show => {  }}, valid_session
         response.should render_template("new")
       end
     end
@@ -104,60 +104,60 @@ describe AnimeShowsController do
 
   describe "PUT update" do
     describe "with valid params" do
-      it "updates the requested show" do
-        show = AnimeShow.create! valid_attributes
-        # Assuming there are no other shows in the database, this
+      it "updates the requested anime_show" do
+        anime_show = AnimeShow.create! valid_attributes
+        # Assuming there are no other anime_shows in the database, this
         # specifies that the AnimeShow created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        AnimeShow.any_instance.should_receive(:update_attributes).with({ "url" => "MyText" })
-        put :update, {:id => show.to_param, :show => { "url" => "MyText" }}, valid_session
+        AnimeShow.any_instance.should_receive(:update_attributes).with({ "these" => "params" })
+        put :update, {:id => anime_show.to_param, :anime_show => { "these" => "params" }}, valid_session
       end
 
-      it "assigns the requested show as @show" do
-        show = AnimeShow.create! valid_attributes
-        put :update, {:id => show.to_param, :show => valid_attributes}, valid_session
-        assigns(:show).should eq(show)
+      it "assigns the requested anime_show as @anime_show" do
+        anime_show = AnimeShow.create! valid_attributes
+        put :update, {:id => anime_show.to_param, :anime_show => valid_attributes}, valid_session
+        assigns(:anime_show).should eq(anime_show)
       end
 
-      it "redirects to the show" do
-        show = AnimeShow.create! valid_attributes
-        put :update, {:id => show.to_param, :show => valid_attributes}, valid_session
-        response.should redirect_to(show)
+      it "redirects to the anime_show" do
+        anime_show = AnimeShow.create! valid_attributes
+        put :update, {:id => anime_show.to_param, :anime_show => valid_attributes}, valid_session
+        response.should redirect_to(anime_show)
       end
     end
 
     describe "with invalid params" do
-      it "assigns the show as @show" do
-        show = AnimeShow.create! valid_attributes
+      it "assigns the anime_show as @anime_show" do
+        anime_show = AnimeShow.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         AnimeShow.any_instance.stub(:save).and_return(false)
-        put :update, {:id => show.to_param, :show => { "url" => "invalid value" }}, valid_session
-        assigns(:show).should eq(show)
+        put :update, {:id => anime_show.to_param, :anime_show => {  }}, valid_session
+        assigns(:anime_show).should eq(anime_show)
       end
 
       it "re-renders the 'edit' template" do
-        show = AnimeShow.create! valid_attributes
+        anime_show = AnimeShow.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         AnimeShow.any_instance.stub(:save).and_return(false)
-        put :update, {:id => show.to_param, :show => { "url" => "invalid value" }}, valid_session
+        put :update, {:id => anime_show.to_param, :anime_show => {  }}, valid_session
         response.should render_template("edit")
       end
     end
   end
 
   describe "DELETE destroy" do
-    it "destroys the requested show" do
-      show = AnimeShow.create! valid_attributes
+    it "destroys the requested anime_show" do
+      anime_show = AnimeShow.create! valid_attributes
       expect {
-        delete :destroy, {:id => show.to_param}, valid_session
+        delete :destroy, {:id => anime_show.to_param}, valid_session
       }.to change(AnimeShow, :count).by(-1)
     end
 
-    it "redirects to the shows list" do
-      show = AnimeShow.create! valid_attributes
-      delete :destroy, {:id => show.to_param}, valid_session
-      response.should redirect_to(shows_url)
+    it "redirects to the anime_shows list" do
+      anime_show = AnimeShow.create! valid_attributes
+      delete :destroy, {:id => anime_show.to_param}, valid_session
+      response.should redirect_to(anime_shows_url)
     end
   end
 

@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "shows/show" do
   before(:each) do
-    @show = assign(:show, stub_model(Show,
+    @show = assign(:show, stub_model(AnimeShow,
       :url => "MyText",
       :name => "Name"
     ))

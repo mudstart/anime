@@ -5,14 +5,14 @@ class Scrape
   def self.show(url)
     scrape_show = Scrape.new(url)
     show = scrape_show.create_show
-    scrape_show.find_episodes
+    scrape_show.find_episodes(url)
 
     show
   end
 
   def self.update_show(show)
     scrape_show = Scrape.new(show.url)
-    scrape_show.find_episodes
+    scrape_show.find_episodes(url)
   end
 
   def initialize(url)
@@ -30,13 +30,15 @@ class Scrape
       name_show_name = name.content
     end
 
+    description = doc.at_css('div#category_desc').content
+
     if name_show_name
-      @show = Show.create(:name => name_show_name, :url => @url)
+      @show = AnimeShow.create(:name => name_show_name, :description => description,:url => @url)
     end
   end
 
-  def find_episodes
-    doc = Nokogiri::HTML(open(@url))
+  def find_episodes(url)
+    doc = Nokogiri::HTML(open(url))
     episode_name = nil
 
     ####
@@ -44,10 +46,10 @@ class Scrape
     doc.css('div#contentwrapper #resultstats_large').each do |episode|
       found_episode = episode.css('div a')[1]
       name = found_episode.content
-      @url = found_episode['href']
+      ep_url = found_episode['href']
       episode_number = name.split(' ').last
 
-      @show.episodes.create(:name => name, :url => @url, :number => episode_number)
+      @show.episodes.create(:name => name, :url => ep_url, :number => episode_number)
     end
 
     doc.css('div#paging a').each do |next_page|

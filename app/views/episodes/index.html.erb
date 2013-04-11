@@ -18,7 +18,7 @@
     <% @episodes.each do |episode| %>
       <tr>
         <td><%= link_to episode.id, episode_path(episode) %></td>
-        <td><%= episode.show_id %></td>
+        <td><%= episode.anime_show.name %></td>
         <td><%= episode.name %></td>
         <td><%= episode.url %></td>
         <td><%= episode.number %></td>
