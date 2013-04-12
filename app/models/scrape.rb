@@ -12,7 +12,7 @@ class Scrape
 
   def self.update_show(show)
     scrape_show = Scrape.new(show.url)
-    scrape_show.find_episodes(url)
+    scrape_show.find_episodes(show.url)
   end
 
   def initialize(url)
