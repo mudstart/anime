@@ -11,12 +11,18 @@ class Scrape
   end
 
   def self.update_show(show)
-    scrape_show = Scrape.new(show.url)
+    scrape_show = Scrape.new(show)
     scrape_show.find_episodes(show.url)
   end
 
-  def initialize(url)
-    @url = url
+  def initialize(input)
+    case input
+    when AnimeShow
+      @url = input.url
+      @show = input
+    else
+      @url = input
+    end
   end
 
   def create_show
@@ -55,7 +61,10 @@ class Scrape
       episode.at_css('img.moduleEntryThumb-med')['style'].match(/\((.*)\)/m)[0]
       image_url = $1
 
-      @show.episodes.create(:name => name, :url => ep_url, :number => episode_number)
+      obj = @show.episodes.create(:name => name, :url => ep_url, :number => episode_number)
+      unless obj.persisted?
+        return
+      end
     end
 
     doc.css('div#paging a').each do |next_page|
