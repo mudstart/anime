@@ -1,6 +1,9 @@
 <%- model_class = AnimeShow -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+  <%= link_to 'Add a show',
+              new_anime_show_path,
+              :class => 'btn btn-primary' %>
 </div>
 <div class="row-fluid">
             <ul class="thumbnails">
@@ -21,7 +24,3 @@
               <% end %>
             </ul>
           </div>
-
-<%= link_to 'Add a show',
-            new_anime_show_path,
-            :class => 'btn btn-primary' %>

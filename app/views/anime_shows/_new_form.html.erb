@@ -1,8 +1,10 @@
 <%= form_for @anime_show, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
-    <%= f.label :url, :class => 'control-label' %>
     <div class="controls">
-      <%= f.text_field :url, :class => 'text_field' %>
+      <div class="input-prepend">
+        <span class="add-on">Show URL:</span>
+        <%= f.text_field :url, :class => 'text_field', :id => 'prependedInput' %>
+      </div>
     </div>
   </div>
 

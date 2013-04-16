@@ -4,5 +4,6 @@
       <h4><%= episode.name %></h3>
       <p>Episode: <%= episode.number %></p>
       <p>Posted: <%= episode.created_at.strftime('%m/%d/%Y') %></p>
+      <%= render :partial => 'user_seen_episodes/create_form', :locals => {:episode => episode} %>
   </a>
 </li>

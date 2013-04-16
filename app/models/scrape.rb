@@ -42,7 +42,8 @@ class Scrape
     image_url = $1
 
     if name_show_name
-      @show = AnimeShow.create(:name => name_show_name, :description => description,:url => @url, :image_url => image_url)
+      @show = AnimeShow.create(:name => name_show_name,
+        :description => description,:url => @url, :image_url => image_url)
     end
   end
 
@@ -61,7 +62,8 @@ class Scrape
       episode.at_css('img.moduleEntryThumb-med')['style'].match(/\((.*)\)/m)[0]
       image_url = $1
 
-      obj = @show.episodes.create(:name => name, :url => ep_url, :number => episode_number)
+      obj = @show.episodes.create(:name => name, :url => ep_url,
+        :number => episode_number)
       unless obj.persisted?
         return
       end
@@ -70,7 +72,7 @@ class Scrape
     doc.css('div#paging a').each do |next_page|
       if next_page.content == 'Next»'
         find_episodes(next_page['href'])
-      end      
+      end
     end
 
     @show.episodes

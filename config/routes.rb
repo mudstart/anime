@@ -2,12 +2,13 @@ AnimeErikkatCom::Application.routes.draw do
 
   resources :anime_shows
 
-
   devise_for :users
 
-  resources :episodes
+  resources :episodes do
+    resources :user_seen_episodes, :only => [:create]
+  end
 
-  resources :anime_shows 
+  resources :anime_shows
 
   root :to => 'high_voltage/pages#show', :id => 'homepage'
 

@@ -1,0 +1,5 @@
+<% unless current_user.user_seen_episodes.exists?(:episode_id => episode.id) %>
+    <%= form_for [episode, UserSeenEpisode.new], :remote => true, :html => {:id => "episode_id_#{episode.id}"} do |f| -%>
+      <%= f.submit 'Mark Seen', :class => 'btn btn-mini' %>
+    <% end -%>
+<% end %>

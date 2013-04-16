@@ -2,7 +2,7 @@ class AnimeShowsController < ApplicationController
   # GET /anime_shows
   # GET /anime_shows.json
   def index
-    @anime_shows = AnimeShow.all
+    @anime_shows = AnimeShow.order('created_at DESC')
 
     respond_to do |format|
       format.html # index.html.erb
