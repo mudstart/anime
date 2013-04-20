@@ -1,26 +1,20 @@
 <%= form_for @episode, :html => { :class => 'form-horizontal' } do |f| %>
   <div class="control-group">
-    <%= f.label :show_id, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.number_field :show_id, :class => 'number_field' %>
+    <div class="input-prepend">
+      <span class="add-on">Episode Name:</span>
+      <%= f.text_field :name, :class => 'text_field', :id => 'prependedInput' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :name, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_field :name, :class => 'text_field' %>
+    <div class="input-prepend">
+      <span class="add-on">Episode URL:</span>
+      <%= f.text_field :url, :class => 'text_field', :id => 'prependedInput' %>
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :url, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.text_area :url, :class => 'text_area' %>
-    </div>
-  </div>
-  <div class="control-group">
-    <%= f.label :number, :class => 'control-label' %>
-    <div class="controls">
-      <%= f.number_field :number, :class => 'number_field' %>
+    <div class="input-prepend">
+      <span class="add-on">Episode Number:</span>
+      <%= f.number_field :number, :class => 'number_field', :id => 'prependedInput' %>
     </div>
   </div>
 
@@ -28,5 +22,10 @@
     <%= f.submit nil, :class => 'btn btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
                 episodes_path, :class => 'btn' %>
+    <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                episode_path(@episode),
+                :method => 'delete',
+                :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                :class => 'btn btn-danger' %>
   </div>
 <% end %>
