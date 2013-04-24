@@ -8,13 +8,19 @@
 </ul>
 <div class="page-header">
   <h1><%= @episode.name %> <small></small></h1>
-  <%= render :partial => 'user_seen_episodes/create_form', :locals => {:episode => @episode} %>
+  <div class="display_inline">
+    <%= render :partial => 'user_seen_episodes/create_form', :locals => {:episode => @episode} %>
+  </div>
+  <div class="display_inline">
+    <%= button_to "Download", episode_download_episode_path(@episode),
+      :form_class => '',
+      :class => 'btn btn-mini',
+      :disable_with => 'loading...',
+      :remote => true %>
+  </div>
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
-              edit_episode_path(@episode), :class => 'btn btn-mini' %>
+                edit_episode_path(@episode), :class => 'btn btn-mini' %>
 </div>
-<table height="500px%" width="100%">
- <tr><td style="overflow:hidden;position:relative;">
-  <iframe scrolling=auto id=rf src="<%= @episode.url %>"
-  frameborder=0 allowtransparency=true style="width:1280px;height:1200px;top:-225px;left:-100px;position:absolute;">
- </td></tr>
-</table>
+<div id="video_content">
+  <%= render 'display_video' %>
+</div>

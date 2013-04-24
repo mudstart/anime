@@ -3,8 +3,8 @@ class GetMp4
   require 'open-uri'
   require 'uri'
 
-  def self.get_video(episode_title, url)
-    doc = Nokogiri::HTML(open(url))
+  def self.get_video(episode)
+    doc = Nokogiri::HTML(open(episode.url))
 
     item = doc.at_css('div#embed_code div iframe')
     video_url = item.attr('src')
@@ -16,9 +16,17 @@ class GetMp4
       match = $1
       @matched = match if match
     end
-    video_name = @matched.split('/').last
 
-    %x!/usr/bin/env curl -L -o downloads/#{episode_title}_#{video_name} #{@matched}!
+    begin
+      video_name = @matched.split('/').last
+    rescue Exception => e
+      return false
+    end
+
+    %x!/usr/bin/env curl -L -o #{Rails.root}/public/videos/#{episode.name.parameterize}_#{video_name} #{@matched}!
+
+    episode.update_attribute(
+      :video_file, "#{episode.name.parameterize}_#{video_name}")
   end
 
 end

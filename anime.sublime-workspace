@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"content",
+				"content_tag  (function)"
+			],
+			[
+				"video",
+				"video_file"
+			],
+			[
+				"ep",
+				"episode"
+			],
+			[
 				"edi",
 				"edit_episode_path"
 			],
@@ -14,10 +26,6 @@
 			[
 				"epis",
 				"episodes"
-			],
-			[
-				"ep",
-				"episode"
 			],
 			[
 				"eps",
@@ -506,14 +514,6 @@
 			[
 				"class",
 				"class_name"
-			],
-			[
-				"auth",
-				"authentications"
-			],
-			[
-				"tw",
-				"twitter_ids"
 			]
 		]
 	},
@@ -545,44 +545,42 @@
 			}
 		},
 		{
-			"file": "config/deploy.rb",
+			"file": "app/views/episodes/show.html.erb",
 			"settings":
 			{
-				"buffer_size": 1653,
+				"buffer_size": 691,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Capfile",
+			"file": "app/models/scrape.rb",
 			"settings":
 			{
-				"buffer_size": 339,
+				"buffer_size": 1874,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "config/capistrano_database_yml.rb",
+			"file": "app/models/get_mp4.rb",
 			"settings":
 			{
-				"buffer_size": 5369,
-				"line_ending": "Unix",
-				"name": "#"
+				"buffer_size": 772,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "config/deploy/database.yml.erb",
+			"file": "config/routes.rb",
 			"settings":
 			{
-				"buffer_size": 397,
-				"line_ending": "Unix",
-				"name": "base: &base"
+				"buffer_size": 2069,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "config/database.yml",
+			"file": "app/controllers/download_episodes_controller.rb",
 			"settings":
 			{
-				"buffer_size": 813,
+				"buffer_size": 138,
 				"line_ending": "Unix"
 			}
 		}
@@ -593,6 +591,14 @@
 		"height": 87.0,
 		"selected_items":
 		[
+			[
+				"respond",
+				"Snippet: respond_to"
+			],
+			[
+				"forma",
+				"Snippet: wants.format"
+			],
 			[
 				"git push",
 				"Git: Push"
@@ -606,6 +612,14 @@
 				"Git: Add..."
 			],
 			[
+				"form",
+				"Format: Ruby"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
 				"git comm",
 				"Git: Commit"
 			],
@@ -616,10 +630,6 @@
 			[
 				"redirect",
 				"Snippet: redirect_to (action)"
-			],
-			[
-				"form",
-				"Snippet: form_for"
 			],
 			[
 				"git p",
@@ -652,10 +662,6 @@
 			[
 				"move",
 				"File: Move"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"snippet",
@@ -752,10 +758,6 @@
 			[
 				"b",
 				"BeautifyRuby"
-			],
-			[
-				"forma",
-				"Format: Ruby"
 			],
 			[
 				"for",
@@ -1035,6 +1037,16 @@
 	},
 	"file_history":
 	[
+		"/Users/erikguzman/Projects/anime/app/controllers/download_episode_controller.rb",
+		"/Users/erikguzman/Projects/anime/db/schema.rb",
+		"/Users/erikguzman/Projects/anime/db/migrate/20130424192213_add_video_file_name_to_episode.rb",
+		"/Users/erikguzman/Projects/anime/config/application.rb",
+		"/Users/erikguzman/Projects/anime/config/deploy.rb",
+		"/Users/erikguzman/Projects/anime/config/environment.rb",
+		"/Users/erikguzman/Projects/anime/config/deploy/database.yml.erb",
+		"/Users/erikguzman/Projects/anime/config/database.yml",
+		"/Users/erikguzman/Projects/anime/config/capistrano_database_yml.rb",
+		"/Users/erikguzman/Projects/anime/Capfile",
 		"/Users/erikguzman/Projects/anime/app/views/episodes/_episode_list_item.html.erb",
 		"/Users/erikguzman/Projects/anime/app/views/episodes/show.html.erb",
 		"/Users/erikguzman/Projects/anime/app/views/anime_shows/index.html.erb",
@@ -1044,7 +1056,6 @@
 		"/Users/erikguzman/Projects/anime/app/views/anime_shows/new.html.erb",
 		"/Users/erikguzman/Projects/anime/app/views/user_seen_episodes/_create_form.html.erb",
 		"/Users/erikguzman/Projects/anime/Gemfile",
-		"/Users/erikguzman/Projects/anime/Capfile",
 		"/Users/erikguzman/Projects/anime/app/models/episode.rb",
 		"/Users/erikguzman/Projects/anime/app/models/user_seen_episode.rb",
 		"/Users/erikguzman/Projects/anime/app/models/user.rb",
@@ -1062,7 +1073,6 @@
 		"/Users/erikguzman/Projects/anime/lib/tasks/update_all_episodes.rake",
 		"/Users/erikguzman/Projects/anime/spec/models/scrape_spec.rb",
 		"/Users/erikguzman/Projects/anime/app/views/anime_shows/edit.html.erb",
-		"/Users/erikguzman/Projects/anime/db/schema.rb",
 		"/Users/erikguzman/Projects/anime/app/assets/stylesheets/bootstrap_and_overrides.css",
 		"/Users/erikguzman/Projects/anime/app/views/episodes/index.html.erb",
 		"/Users/erikguzman/Projects/anime/app/views/anime_shows/_show_list.html.erb",
@@ -1154,15 +1164,7 @@
 		"/Users/erikguzman/Projects/blue/app/helpers/bluebag_permissions_helper.rb",
 		"/Users/erikguzman/Projects/blue/app/views/sub_relationships/create.js.erb",
 		"/Users/erikguzman/Projects/blue/app/controllers/users_controller.rb",
-		"/Users/erikguzman/Projects/blue/app/controllers/bluebags_controller.rb",
-		"/Users/erikguzman/Projects/blue/app/controllers/posts_controller.rb",
-		"/Users/erikguzman/Projects/blue/app/controllers/pages_controller.rb",
-		"/Users/erikguzman/Projects/blue/app/controllers/notifications_controller.rb",
-		"/Users/erikguzman/Projects/blue/app/views/notifications/_notification_activity_item.html.erb",
-		"/Users/erikguzman/Projects/blue/app/views/notifications/index.js.erb",
-		"/Users/erikguzman/Projects/blue/app/views/notification_activity/_comment.html.erb",
-		"/Users/erikguzman/Projects/blue/app/views/notification_activity/_like.html.erb",
-		"/Users/erikguzman/Projects/blue/app/views/notification_activity/_mention.html.erb"
+		"/Users/erikguzman/Projects/blue/app/controllers/bluebags_controller.rb"
 	],
 	"find":
 	{
@@ -1414,104 +1416,22 @@
 				},
 				{
 					"buffer": 3,
-					"file": "config/deploy.rb",
+					"file": "app/views/episodes/show.html.erb",
 					"settings":
 					{
-						"buffer_size": 1653,
+						"buffer_size": 691,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								45,
-								45
+								587,
+								587
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Capfile",
-					"settings":
-					{
-						"buffer_size": 339,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								339,
-								339
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "config/capistrano_database_yml.rb",
-					"settings":
-					{
-						"buffer_size": 5369,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2796,
-								2796
-							]
-						],
-						"settings":
-						{
-							"auto_name": "#",
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "config/deploy/database.yml.erb",
-					"settings":
-					{
-						"buffer_size": 397,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								91,
-								91
-							]
-						],
-						"settings":
-						{
-							"auto_name": "base: &base",
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -1523,26 +1443,107 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "config/database.yml",
+					"buffer": 4,
+					"file": "app/models/scrape.rb",
 					"settings":
 					{
-						"buffer_size": 813,
+						"buffer_size": 1874,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								813,
-								813
+								599,
+								599
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/YAML/YAML.tmLanguage",
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/models/get_mp4.rb",
+					"settings":
+					{
+						"buffer_size": 772,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								772,
+								772
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "config/routes.rb",
+					"settings":
+					{
+						"buffer_size": 2069,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								220,
+								220
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/controllers/download_episodes_controller.rb",
+					"settings":
+					{
+						"buffer_size": 138,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								133,
+								133
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1607,6 +1608,34 @@
 		"selected_items":
 		[
 			[
+				"down",
+				"app/controllers/download_episodes_controller.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
+			],
+			[
+				"addvideo",
+				"db/migrate/20130424192213_add_video_file_name_to_episode.rb"
+			],
+			[
+				"schema",
+				"db/schema.rb"
+			],
+			[
+				"scra",
+				"app/models/scrape.rb"
+			],
+			[
+				"sch",
+				"db/schema.rb"
+			],
+			[
+				"epshow",
+				"app/views/episodes/show.html.erb"
+			],
+			[
 				"dat",
 				"config/database.yml"
 			],
@@ -1621,10 +1650,6 @@
 			[
 				"eplis",
 				"app/views/episodes/_episode_list_item.html.erb"
-			],
-			[
-				"epshow",
-				"app/views/episodes/show.html.erb"
 			],
 			[
 				"aninde",
@@ -1669,10 +1694,6 @@
 			[
 				"home",
 				"app/views/pages/homepage.html.erb"
-			],
-			[
-				"route",
-				"config/routes.rb"
 			],
 			[
 				"ancon",
@@ -1836,10 +1857,6 @@
 			],
 			[
 				"scema",
-				"db/schema.rb"
-			],
-			[
-				"schema",
 				"db/schema.rb"
 			],
 			[
@@ -2101,22 +2118,6 @@
 			[
 				"layout",
 				"app/views/layouts/application.html.erb"
-			],
-			[
-				"subrecreate",
-				"app/views/sub_relationships/create.js.erb"
-			],
-			[
-				"notiindexjs",
-				"app/views/notifications/index.js.erb"
-			],
-			[
-				"notiindex",
-				"app/views/notifications/_notifications_index.html.erb"
-			],
-			[
-				"notindex",
-				"app/views/notifications/_notifications_index.html.erb"
 			]
 		],
 		"width": 0.0
@@ -2132,7 +2133,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 187.0,
 	"status_bar_visible": true
 }

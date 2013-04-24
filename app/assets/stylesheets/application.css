@@ -11,3 +11,7 @@
  *= require_self
  *= require_tree .
  */
+
+.display_inline {
+    display: inline-block;
+}

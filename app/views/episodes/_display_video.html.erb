@@ -1,0 +1,7 @@
+<% if @episode.video_file.present? %>
+  <video width="560" height="340" controls>
+    <%= content_tag :source, nil, :src => "/videos/#{@episode.video_file}" %>
+  </video>
+<% else %>
+  <%= render 'nw_anime_iframe' %>
+<% end -%>
