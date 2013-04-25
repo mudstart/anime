@@ -16,6 +16,7 @@ gem 'high_voltage'
 gem "twitter-bootstrap-rails"
 gem 'exception_notification'
 gem 'delayed_job_active_record'
+gem 'daemons'
 
 group :production do
   gem 'mysql2'
