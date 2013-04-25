@@ -36,29 +36,39 @@
   </head>
   <body>
 
-    <div class="navbar navbar-fluid-top">
+    <div id="mobile-header" class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <%= link_to "Anime", root_path, :class => "brand" %>
-          <div class="container-fluid nav-collapse">
+        <a id="responsive-menu-button" href="#sidr-main" class="btn">Menu</a>
+      </div>
+    </div>
+
+    <div id="navigation" class="navbar navbar-inverse">
+      <div class="navbar-inner">
+        <nav class="nav">
             <ul class="nav">
-              <li><%= link_to "Shows", anime_shows_path  %></li>
-              <li><%= link_to "Episodes", episodes_path  %></li>
-              <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete  %></li>
+                <li><%= link_to "Home", root_path  %></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                      Shows
+                      <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><%= link_to "All", anime_shows_path  %></li>
+                      <% AnimeShow.all.each do |anime| %>
+                        <li><%= link_to anime.name, anime  %></li>
+                      <% end %>
+                    </ul>
+                </li>
+                <li><%= link_to "Episodes", episodes_path  %></li>
+                <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete  %></li>
             </ul>
-          </div><!--/.nav-collapse -->
-        </div>
+        </nav>
       </div>
     </div>
 
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3">
+        <div class="span3" id="side_well">
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <li class="nav-header">Anime Show</li>

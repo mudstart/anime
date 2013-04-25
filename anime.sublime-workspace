@@ -4,12 +4,24 @@
 		"selected_items":
 		[
 			[
-				"content",
-				"content_tag  (function)"
+				"span",
+				"span2"
 			],
 			[
 				"video",
 				"video_file"
+			],
+			[
+				"par",
+				"params"
+			],
+			[
+				"bt",
+				"btn-mini"
+			],
+			[
+				"content",
+				"content_tag  (function)"
 			],
 			[
 				"ep",
@@ -56,10 +68,6 @@
 				"input"
 			],
 			[
-				"par",
-				"partial"
-			],
-			[
 				"Anime",
 				"AnimeShow"
 			],
@@ -82,10 +90,6 @@
 			[
 				"btn",
 				"btn-primary"
-			],
-			[
-				"bt",
-				"btn"
 			],
 			[
 				"anim",
@@ -510,37 +514,16 @@
 			[
 				"p",
 				"phone"
-			],
-			[
-				"class",
-				"class_name"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/controllers/user_seen_episodes_controller.rb",
-			"settings":
-			{
-				"buffer_size": 261,
-				"line_ending": "Unix",
-				"name": "class UserSeenEpisodes  <  ApplicationController"
-			}
-		},
-		{
-			"file": "app/views/user_seen_episodes/create.js.erb",
-			"settings":
-			{
-				"buffer_size": 54,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/models/episode.rb",
 			"settings":
 			{
-				"buffer_size": 389,
+				"buffer_size": 536,
 				"line_ending": "Unix"
 			}
 		},
@@ -548,7 +531,7 @@
 			"file": "app/views/episodes/show.html.erb",
 			"settings":
 			{
-				"buffer_size": 691,
+				"buffer_size": 799,
 				"line_ending": "Unix"
 			}
 		},
@@ -564,15 +547,7 @@
 			"file": "app/models/get_mp4.rb",
 			"settings":
 			{
-				"buffer_size": 772,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "config/routes.rb",
-			"settings":
-			{
-				"buffer_size": 2069,
+				"buffer_size": 781,
 				"line_ending": "Unix"
 			}
 		},
@@ -580,7 +555,31 @@
 			"file": "app/controllers/download_episodes_controller.rb",
 			"settings":
 			{
-				"buffer_size": 138,
+				"buffer_size": 252,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/anime_shows/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 577,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/anime_shows_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2225,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/deploy.rb",
+			"settings":
+			{
+				"buffer_size": 1778,
 				"line_ending": "Unix"
 			}
 		}
@@ -592,24 +591,52 @@
 		"selected_items":
 		[
 			[
-				"respond",
-				"Snippet: respond_to"
+				"git psh",
+				"Git: Push"
 			],
 			[
-				"forma",
-				"Snippet: wants.format"
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
 			],
 			[
 				"git push",
 				"Git: Push"
 			],
 			[
+				"git p",
+				"Git: Pull"
+			],
+			[
+				"git amm",
+				"Git: Amend Commit"
+			],
+			[
 				"git com",
 				"Git: Commit"
 			],
 			[
-				"git add",
+				"gitadd",
 				"Git: Add..."
+			],
+			[
+				"redi",
+				"Snippet: redirect_to (action)"
+			],
+			[
+				"linkto",
+				"Snippet: link_to (path)"
+			],
+			[
+				"respond",
+				"Snippet: respond_to"
+			],
+			[
+				"forma",
+				"Snippet: wants.format"
 			],
 			[
 				"form",
@@ -620,20 +647,12 @@
 				"Package Control: Install Package"
 			],
 			[
-				"git comm",
-				"Git: Commit"
-			],
-			[
 				"scope",
 				"Snippet: named_scope lambda"
 			],
 			[
 				"redirect",
 				"Snippet: redirect_to (action)"
-			],
-			[
-				"git p",
-				"Git: Push"
 			],
 			[
 				"gti comm",
@@ -682,10 +701,6 @@
 			[
 				"git puh",
 				"Git: Push"
-			],
-			[
-				"git amm",
-				"Git: Amend Commit"
 			],
 			[
 				"be",
@@ -776,10 +791,6 @@
 				"Format: Ruby"
 			],
 			[
-				"git psh",
-				"Git: Push"
-			],
-			[
 				"gi add",
 				"Git: Add..."
 			],
@@ -822,10 +833,6 @@
 			[
 				"gitch",
 				"Git: Commit history"
-			],
-			[
-				"gitadd",
-				"Git: Add..."
 			],
 			[
 				"git a",
@@ -1020,7 +1027,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 602.0
+		"width": 530.0
 	},
 	"console":
 	{
@@ -1037,30 +1044,41 @@
 	},
 	"file_history":
 	[
-		"/Users/erikguzman/Projects/anime/app/controllers/download_episode_controller.rb",
-		"/Users/erikguzman/Projects/anime/db/schema.rb",
-		"/Users/erikguzman/Projects/anime/db/migrate/20130424192213_add_video_file_name_to_episode.rb",
+		"/Users/erikguzman/Projects/anime/config/boot.rb",
+		"/Users/erikguzman/Projects/anime/Gemfile",
 		"/Users/erikguzman/Projects/anime/config/application.rb",
+		"/Users/erikguzman/Projects/anime/public/videos/tmp",
+		"/Users/erikguzman/Projects/anime/.gitignore",
+		"/Users/erikguzman/Projects/anime/script/delayed_job",
 		"/Users/erikguzman/Projects/anime/config/deploy.rb",
+		"/Users/erikguzman/Projects/anime/Capfile",
+		"/Users/erikguzman/Projects/anime/public/videos/karneval-tv-4-raw_video.mp4",
+		"/Users/erikguzman/Projects/anime/app/controllers/episodes_controller.rb",
+		"/Users/erikguzman/Projects/anime/app/views/user_seen_episodes/create.js.erb",
+		"/Users/erikguzman/Projects/anime/app/controllers/user_seen_episodes_controller.rb",
+		"/Users/erikguzman/Projects/anime/lib/tasks/update_all_episodes.rake",
+		"/Users/erikguzman/Projects/anime/Procfile",
+		"/Users/erikguzman/Projects/anime/config/routes.rb",
+		"/Users/erikguzman/Projects/anime/app/views/episodes/_form.html.erb",
+		"/Users/erikguzman/Projects/anime/app/views/download_episodes/create.js.erb",
+		"/Users/erikguzman/Projects/anime/db/schema.rb",
+		"/Users/erikguzman/Projects/anime/app/assets/stylesheets/application.css",
+		"/Users/erikguzman/Projects/anime/app/controllers/download_episode_controller.rb",
+		"/Users/erikguzman/Projects/anime/db/migrate/20130424192213_add_video_file_name_to_episode.rb",
 		"/Users/erikguzman/Projects/anime/config/environment.rb",
 		"/Users/erikguzman/Projects/anime/config/deploy/database.yml.erb",
 		"/Users/erikguzman/Projects/anime/config/database.yml",
 		"/Users/erikguzman/Projects/anime/config/capistrano_database_yml.rb",
-		"/Users/erikguzman/Projects/anime/Capfile",
 		"/Users/erikguzman/Projects/anime/app/views/episodes/_episode_list_item.html.erb",
 		"/Users/erikguzman/Projects/anime/app/views/episodes/show.html.erb",
 		"/Users/erikguzman/Projects/anime/app/views/anime_shows/index.html.erb",
-		"/Users/erikguzman/Projects/anime/app/views/episodes/_form.html.erb",
 		"/Users/erikguzman/Projects/anime/app/views/anime_shows/_form.html.erb",
 		"/Users/erikguzman/Projects/anime/app/views/pages/homepage.html.erb",
 		"/Users/erikguzman/Projects/anime/app/views/anime_shows/new.html.erb",
 		"/Users/erikguzman/Projects/anime/app/views/user_seen_episodes/_create_form.html.erb",
-		"/Users/erikguzman/Projects/anime/Gemfile",
 		"/Users/erikguzman/Projects/anime/app/models/episode.rb",
 		"/Users/erikguzman/Projects/anime/app/models/user_seen_episode.rb",
 		"/Users/erikguzman/Projects/anime/app/models/user.rb",
-		"/Users/erikguzman/Projects/anime/app/controllers/episodes_controller.rb",
-		"/Users/erikguzman/Projects/anime/config/routes.rb",
 		"/Users/erikguzman/Projects/anime/app/controllers/anime_shows_controller.rb",
 		"/Users/erikguzman/Projects/anime/spec/controllers/episodes_controller_spec.rb",
 		"/Users/erikguzman/Projects/anime/spec/models/user_seen_episode_spec.rb",
@@ -1070,7 +1088,6 @@
 		"/Users/erikguzman/Projects/anime/app/views/layouts/application.html.erb",
 		"/Users/erikguzman/Projects/anime/spec/views/anime_shows/index.html.erb_spec.rb",
 		"/Users/erikguzman/Projects/anime/spec/controllers/anime_shows_controller_spec.rb",
-		"/Users/erikguzman/Projects/anime/lib/tasks/update_all_episodes.rake",
 		"/Users/erikguzman/Projects/anime/spec/models/scrape_spec.rb",
 		"/Users/erikguzman/Projects/anime/app/views/anime_shows/edit.html.erb",
 		"/Users/erikguzman/Projects/anime/app/assets/stylesheets/bootstrap_and_overrides.css",
@@ -1154,17 +1171,7 @@
 		"/Users/erikguzman/Projects/blue/app/views/layouts/application.html.erb",
 		"/Users/erikguzman/Projects/blue/config/application.rb",
 		"/Users/erikguzman/Projects/blue/config/environment.rb",
-		"/Users/erikguzman/Projects/blue/script/rails",
-		"/Users/erikguzman/Projects/blue/script/delayed_job",
-		"/Users/erikguzman/Projects/blue/private_pub.ru",
-		"/Users/erikguzman/Projects/blue/app/views/notifications/popover_notifications.js.erb",
-		"/Users/erikguzman/Projects/blue/app/views/layouts/_mobilenav.html.erb",
-		"/Users/erikguzman/Projects/blue/app/views/notifications/_notifications_index.html.erb",
-		"/Users/erikguzman/Projects/blue/app/views/notifications/_notification_popover_viewall.html.erb",
-		"/Users/erikguzman/Projects/blue/app/helpers/bluebag_permissions_helper.rb",
-		"/Users/erikguzman/Projects/blue/app/views/sub_relationships/create.js.erb",
-		"/Users/erikguzman/Projects/blue/app/controllers/users_controller.rb",
-		"/Users/erikguzman/Projects/blue/app/controllers/bluebags_controller.rb"
+		"/Users/erikguzman/Projects/blue/script/rails"
 	],
 	"find":
 	{
@@ -1183,6 +1190,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"episode",
 			">",
 			"anime_show_id",
 			"Show",
@@ -1309,8 +1317,7 @@
 			"phone1",
 			"errors",
 			"root",
-			"ruby",
-			"API."
+			"ruby"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1332,28 +1339,27 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/user_seen_episodes_controller.rb",
+					"file": "app/models/episode.rb",
 					"settings":
 					{
-						"buffer_size": 261,
+						"buffer_size": 536,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								77,
-								77
+								509,
+								478
 							]
 						],
 						"settings":
 						{
-							"auto_name": "class UserSeenEpisodes  <  ApplicationController",
 							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -1364,70 +1370,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/views/user_seen_episodes/create.js.erb",
-					"settings":
-					{
-						"buffer_size": 54,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								38,
-								38
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/JavaScript (Rails).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/models/episode.rb",
-					"settings":
-					{
-						"buffer_size": 389,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "app/views/episodes/show.html.erb",
 					"settings":
 					{
-						"buffer_size": 691,
+						"buffer_size": 799,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								587,
-								587
+								799,
+								799
 							]
 						],
 						"settings":
@@ -1443,7 +1397,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 2,
 					"file": "app/models/scrape.rb",
 					"settings":
 					{
@@ -1454,8 +1408,8 @@
 						"selection":
 						[
 							[
-								599,
-								599
+								256,
+								260
 							]
 						],
 						"settings":
@@ -1471,24 +1425,52 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 3,
 					"file": "app/models/get_mp4.rb",
 					"settings":
 					{
-						"buffer_size": 772,
+						"buffer_size": 781,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								772,
-								772
+								780,
+								780
 							]
 						],
 						"settings":
 						{
 							"auto_name": "",
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/controllers/download_episodes_controller.rb",
+					"settings":
+					{
+						"buffer_size": 252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								210
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -1498,19 +1480,45 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "config/routes.rb",
+					"buffer": 5,
+					"file": "app/views/anime_shows/show.html.erb",
 					"settings":
 					{
-						"buffer_size": 2069,
+						"buffer_size": 577,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								220,
-								220
+								523,
+								523
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/controllers/anime_shows_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1543,
+								1543
 							]
 						],
 						"settings":
@@ -1520,25 +1528,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 389.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 7,
-					"file": "app/controllers/download_episodes_controller.rb",
+					"file": "config/deploy.rb",
 					"settings":
 					{
-						"buffer_size": 138,
+						"buffer_size": 1778,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								133,
-								133
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1608,6 +1616,50 @@
 		"selected_items":
 		[
 			[
+				"git",
+				".gitignore"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"de",
+				"config/deploy.rb"
+			],
+			[
+				"depl",
+				"config/deploy.rb"
+			],
+			[
+				"showcon",
+				"app/controllers/anime_shows_controller.rb"
+			],
+			[
+				"showshow",
+				"app/views/anime_shows/show.html.erb"
+			],
+			[
+				"epcon",
+				"app/controllers/episodes_controller.rb"
+			],
+			[
+				"rake",
+				"lib/tasks/update_all_episodes.rake"
+			],
+			[
+				"schem",
+				"db/schema.rb"
+			],
+			[
+				"epform",
+				"app/views/episodes/_form.html.erb"
+			],
+			[
+				"css",
+				"app/assets/stylesheets/application.css"
+			],
+			[
 				"down",
 				"app/controllers/download_episodes_controller.rb"
 			],
@@ -1644,10 +1696,6 @@
 				"app/views/anime_shows/_form.html.erb"
 			],
 			[
-				"epform",
-				"app/views/episodes/_form.html.erb"
-			],
-			[
 				"eplis",
 				"app/views/episodes/_episode_list_item.html.erb"
 			],
@@ -1668,16 +1716,8 @@
 				"Capfile"
 			],
 			[
-				"depl",
-				"config/deploy.rb"
-			],
-			[
 				"capi",
 				"Capfile"
-			],
-			[
-				"gem",
-				"Gemfile"
 			],
 			[
 				"epis",
@@ -1685,10 +1725,6 @@
 			],
 			[
 				"con",
-				"app/controllers/episodes_controller.rb"
-			],
-			[
-				"epcon",
 				"app/controllers/episodes_controller.rb"
 			],
 			[
@@ -1792,10 +1828,6 @@
 				"app/views/anime_shows/_show_list.html.erb"
 			],
 			[
-				"showshow",
-				"app/views/anime_shows/show.html.erb"
-			],
-			[
 				"epinde",
 				"app/views/episodes/index.html.erb"
 			],
@@ -1809,10 +1841,6 @@
 			],
 			[
 				"sche",
-				"db/schema.rb"
-			],
-			[
-				"schem",
 				"db/schema.rb"
 			],
 			[
@@ -1842,10 +1870,6 @@
 			[
 				"animeshow",
 				"app/models/anime_show.rb"
-			],
-			[
-				"showcon",
-				"app/controllers/anime_shows_controller.rb"
 			],
 			[
 				"specscr",
@@ -2102,22 +2126,6 @@
 			[
 				"bluecon",
 				"app/controllers/bluebags_controller.rb"
-			],
-			[
-				"postcon",
-				"app/controllers/posts_controller.rb"
-			],
-			[
-				"appcontrol",
-				"app/controllers/application_controller.rb"
-			],
-			[
-				"notcon",
-				"app/controllers/notifications_controller.rb"
-			],
-			[
-				"layout",
-				"app/views/layouts/application.html.erb"
 			]
 		],
 		"width": 0.0
