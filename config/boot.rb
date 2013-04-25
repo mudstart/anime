@@ -1,5 +1,5 @@
 if ENV['RAILS_ENV'] == 'production'
-  Gem.clear_paths
+  # Gem.clear_paths
 end
 require 'rubygems'
 
