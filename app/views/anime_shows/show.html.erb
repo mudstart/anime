@@ -3,7 +3,15 @@
   <p><span class="label label-info">Source:</span><%=  link_to @anime_show.url %></p>
   <p><%= @anime_show.description %></p>
   <p>
-    <%= link_to "Edit Info", edit_anime_show_path(@anime_show), :class => "btn btn-primary" %>
+    <div class="display_inline">
+        <%= link_to "Edit Info", edit_anime_show_path(@anime_show), :class => "btn btn-primary" %>
+    </div>
+    <div class="display_inline">
+      <%= button_to "Update Episodes", anime_show_path(@anime_show),
+        :class => 'btn',
+        :disable_with => 'loading...',
+        :method => :put %>
+    </div>
   </p>
 </div>
 <%= render 'show_list' %>

@@ -15,9 +15,10 @@ gem 'nokogiri'
 gem 'high_voltage'
 gem "twitter-bootstrap-rails"
 gem 'exception_notification'
+gem 'delayed_job_active_record'
 
 group :production do
-  gem 'mysql2'  
+  gem 'mysql2'
 end
 
 group :test, :development do
@@ -26,7 +27,7 @@ group :test, :development do
   gem 'sqlite3'
 end
 
-group :test do 
+group :test do
   gem "guard-rspec"
   gem 'rb-fsevent', '~> 0.9'
 end

@@ -57,6 +57,7 @@ class AnimeShowsController < ApplicationController
   # PUT /anime_shows/1.json
   def update
     @anime_show = AnimeShow.find(params[:id])
+    Scrape.update_show(@anime_show)
 
     respond_to do |format|
       if @anime_show.update_attributes(params[:anime_show])
