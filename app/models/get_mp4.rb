@@ -8,6 +8,10 @@ class GetMp4
 
     item = doc.at_css('div#embed_code div iframe')
     video_url = item.attr('src')
+    unless video_url.include?('facebook')
+      episode.update_attribute(
+        :video_file, video_url)
+    end
 
     video_doc = Nokogiri::HTML(open(video_url))
 

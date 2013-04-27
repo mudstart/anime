@@ -1,7 +1,7 @@
 <% if @episode.video.exists? %>
-    <%= render :partial => 'video_player', :locals => {:video_url => @episode.video.url } %>
+    <%= render :partial => 'episodes/video_player', :locals => {:video_url => @episode.video.url } %>
 <% elsif @episode.video_file.present? %>
-    <%= render :partial => 'video_player', :locals => {:video_url => @episode.video_file} %>
+    <IFRAME SRC="<%= @episode.video_file %>" FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=640 HEIGHT=360></IFRAME>
 <% else %>
   <%= render 'nw_anime_iframe' %>
 <% end -%>
