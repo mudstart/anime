@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130425010523) do
+ActiveRecord::Schema.define(:version => 20130425234638) do
 
   create_table "anime_shows", :force => true do |t|
     t.text     "url"
@@ -42,10 +42,14 @@ ActiveRecord::Schema.define(:version => 20130425010523) do
     t.string   "name"
     t.text     "url"
     t.integer  "number"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
     t.text     "image_url"
     t.string   "video_file"
+    t.string   "video_file_name"
+    t.string   "video_content_type"
+    t.integer  "video_file_size"
+    t.datetime "video_updated_at"
   end
 
   add_index "episodes", ["anime_show_id"], :name => "index_episodes_on_show_id"

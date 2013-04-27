@@ -6,7 +6,7 @@ AnimeErikkatCom::Application.routes.draw do
 
   resources :episodes do
     resources :user_seen_episodes, :only => [:create]
-    resource :download_episode, :only => [:create]
+    resource :download_episode, :only => [:create, :destroy]
   end
 
   resources :anime_shows

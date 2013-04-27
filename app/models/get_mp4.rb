@@ -23,10 +23,12 @@ class GetMp4
       return false
     end
 
-    %x!/usr/bin/env curl -L -o #{Rails.root}/public/videos/#{episode.name.parameterize}_#{video_name} #{@matched}!
+    episode.video_remote_url @matched
+    episode.save
+    # %x!/usr/bin/env curl -L -o #{Rails.root}/public/videos/#{episode.name.parameterize}_#{video_name} #{@matched}!
 
-    episode.update_attribute(
-      :video_file, "#{episode.name.parameterize}_#{video_name}")
+    # episode.update_attribute(
+    #   :video_file, "#{episode.name.parameterize}_#{video_name}")
   end
 
 end

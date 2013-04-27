@@ -9,7 +9,7 @@ ruby '1.8.7'
 gem 'json'
 
 gem 'devise'
-gem "paperclip", "~>2.0"
+gem "paperclip"
 gem "will_paginate"
 gem 'nokogiri'
 gem 'high_voltage'
@@ -17,7 +17,7 @@ gem "twitter-bootstrap-rails"
 gem 'exception_notification'
 gem 'delayed_job_active_record'
 gem 'daemons'
-
+gem 'paperclip-aws'
 group :production do
   gem 'mysql2'
 end

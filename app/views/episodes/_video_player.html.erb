@@ -1,0 +1,7 @@
+<video width="560" height="340" controls>
+  <% if video_url =~ URI::regexp %>
+      <%= content_tag :source, nil, :src => "#{video_url}", :type => "video/mp4" %>
+  <% else %>
+      <%= content_tag :source, nil, :src => "/videos/#{video_url}", :type => "video/mp4" %>
+  <% end %>
+</video>

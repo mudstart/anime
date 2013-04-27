@@ -5,29 +5,59 @@
       <%= f.text_field :name, :class => 'text_field', :id => 'prependedInput' %>
     </div>
   </div>
+
   <div class="control-group">
     <div class="input-prepend">
       <span class="add-on">Episode URL:</span>
       <%= f.text_field :url, :class => 'text_field', :id => 'prependedInput' %>
     </div>
   </div>
+
   <div class="control-group">
     <div class="input-prepend">
       <span class="add-on">Episode Number:</span>
       <%= f.number_field :number, :class => 'number_field', :id => 'prependedInput' %>
     </div>
   </div>
+
   <div class="control-group">
     <div class="input-prepend">
-      <span class="add-on">Episode File Name:</span>
+      <span class="add-on">Embed URL:</span>
       <%= f.text_field :video_file, :class => 'text_field', :id => 'prependedInput' %>
     </div>
   </div>
 
+  <% if @episode.video.exists? %>
+    <ul class="thumbnails">
+      <li>
+        <div class="thumbnail">
+          <h4>Video Uploaded</h4>
+          <span class="display_inline">
+            <%= content_tag :a, "View URL", :class => 'btn', :id => "video_info_button", 'data-toggle' => "popover",'data-content' => "#{@episode.video.url}", 'data-original-title' => "Video URL" %>
+          </span>
+          <span class="display_inline">
+            <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                        episode_download_episode_path(@episode),
+                        :method => 'delete',
+                        :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                        :class => 'btn btn-danger' %>
+            </span>
+        </div>
+      </li>
+    </ul>
+  <% else %>
+    <div class="control-group">
+      <div class="input-prepend">
+        <span class="add-on">Upload Video:</span>
+          <%= f.file_field :video, :id => 'prependedInput' %>
+      </div>
+    </div>
+  <% end -%>
+
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                episodes_path, :class => 'btn' %>
+                episode_path, :class => 'btn' %>
     <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
                 episode_path(@episode),
                 :method => 'delete',
