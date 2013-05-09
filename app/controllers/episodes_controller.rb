@@ -18,6 +18,7 @@ class EpisodesController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.json { render :json => @episode }
+      format.js
     end
   end
 

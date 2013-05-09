@@ -1,0 +1,1 @@
+$('div.modal-body').html('<%= escape_javascript render 'display_video' %>');

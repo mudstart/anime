@@ -1,9 +1,10 @@
 <li class="span4 show_info_item">
-  <a href="<%= episode_path(episode) %>" class="thumbnail">
+  <a href="<%= episode_path(episode) %>" class="thumbnail episode_card">
       <img data-src="holder.js/300x200" alt="300x200" style="width: 300px; height: 200px;" src="<%= episode.anime_show.image_url %>">
       <h4><%= episode.anime_show.name %></h3>
       <p>Episode: <%= episode.number %></p>
       <p>Posted: <%= episode.created_at.strftime('%m/%d/%Y') %></p>
       <%= render :partial => 'user_seen_episodes/create_form', :locals => {:episode => episode} %>
   </a>
+  <%= link_to "Preview", episode, 'data-toggle' => 'modal', 'data-target' => '#modal', :remote => true, :class => 'btn btn-mini display_inline preview_video' %>
 </li>

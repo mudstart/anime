@@ -11,10 +11,10 @@ class Episode < ActiveRecord::Base
 
   has_attached_file :video,
   :storage => :aws,
-  :s3_bucket => ENV['AWS_BUCKET'],
+  :s3_bucket => ENV["AWS_BUCKET"],
   :s3_credentials => {
-        :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
-        :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY'],
+        :access_key_id => ENV["AWS_ACCESS_KEY_ID"],
+        :secret_access_key => ENV["AWS_SECRET_ACCESS_KEY"],
         :endpoint => 'objects.dreamhost.com'
       },
   :s3_permissions => :public_read,
@@ -22,6 +22,10 @@ class Episode < ActiveRecord::Base
 
   Paperclip.interpolates :show  do |attachment, style|
     attachment.instance.anime_show.name
+  end
+
+  Paperclip.interpolates :number  do |attachment, style|
+    attachment.instance.anime_show.number
   end
 
   def video_remote_url(url_value)
@@ -48,6 +52,6 @@ class Episode < ActiveRecord::Base
   end
 
   def download_episode
-    GetMp4.delay(:run_at => Time.zone.now).get_video(self)
+    GetMp4.delay.get_video(self)
   end
 end

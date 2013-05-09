@@ -64,7 +64,7 @@ class AnimeShowsController < ApplicationController
         format.html { redirect_to @anime_show, :notice => 'Anime show was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render :action => "edit" }
+        format.html { redirect_to @anime_show }
         format.json { render :json => @anime_show.errors, :status => :unprocessable_entity }
       end
     end

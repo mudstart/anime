@@ -81,6 +81,9 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     ffi (1.6.0)
+    figaro (0.6.4)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     formatador (0.2.4)
     guard (1.7.0)
       formatador (>= 0.2.4)
@@ -236,6 +239,7 @@ DEPENDENCIES
   delayed_job_active_record
   devise
   exception_notification
+  figaro
   guard-rspec
   high_voltage
   jquery-rails

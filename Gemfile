@@ -18,6 +18,7 @@ gem 'exception_notification'
 gem 'delayed_job_active_record'
 gem 'daemons'
 gem 'paperclip-aws'
+gem "figaro"
 group :production do
   gem 'mysql2'
 end

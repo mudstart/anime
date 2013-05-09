@@ -62,9 +62,12 @@ class Scrape
       episode.at_css('img.moduleEntryThumb-med')['style'].match(/\((.*)\)/m)[0]
       image_url = $1
 
-      obj = @show.episodes.create(:name => name, :url => ep_url,
+      ep_obj = @show.episodes.create(:name => name, :url => ep_url,
         :number => episode_number)
-      unless obj.persisted?
+      if ep_obj.persisted?
+        @show.touch
+        GetMp4.delay.get_video ep_obj
+      else
         return
       end
     end

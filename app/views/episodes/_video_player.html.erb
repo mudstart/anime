@@ -1,7 +1,12 @@
-<video width="560" height="340" controls>
   <% if video_url =~ URI::regexp %>
-      <%= content_tag :source, nil, :src => "#{video_url}", :type => "video/mp4" %>
+      <div id='my-video'></div>
+      <script type='text/javascript'>
+          jwplayer('my-video').setup({
+              file: '<%= video_url %>',
+              width: '640',
+              height: '360'
+          });
+      </script>
   <% else %>
       <%= content_tag :source, nil, :src => "/videos/#{video_url}", :type => "video/mp4" %>
   <% end %>
-</video>

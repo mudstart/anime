@@ -20,4 +20,4 @@ $().ready(function() {
       name: 'sidr-main',
       source: '#navigation'
     });
-})
+});

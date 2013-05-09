@@ -32,3 +32,22 @@
 .display_inline {
     display: inline-block;
 }
+
+.modal {
+    text-align: center;
+    width: 720px !important;
+}
+
+.episode_card {
+    min-height: 340px;
+}
+
+li.show_info_item {
+    position: relative;
+}
+
+.preview_video {
+    position: absolute;
+    right: 5px;
+    bottom: 27px;
+}

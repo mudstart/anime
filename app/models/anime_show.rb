@@ -3,4 +3,6 @@ class AnimeShow < ActiveRecord::Base
   validates :name, :url, :presence => true
 
   has_many :episodes, :dependent => :destroy
+
+  default_scope { order("updated_at DESC") }
 end
