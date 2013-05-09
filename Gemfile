@@ -19,6 +19,7 @@ gem 'delayed_job_active_record'
 gem 'daemons'
 gem 'paperclip-aws'
 gem "figaro"
+gem 'dj_mon'
 group :production do
   gem 'mysql2'
 end

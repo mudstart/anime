@@ -1,4 +1,5 @@
 AnimeErikkatCom::Application.routes.draw do
+  mount DjMon::Engine => 'dj_mon'
 
   resources :anime_shows
 
