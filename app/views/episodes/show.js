@@ -1,2 +1,2 @@
 $('div.modal-body').html('<%= escape_javascript render 'display_video' %>');
-$('modal-footer').append('<%= escape_javascript render :partial => 'user_seen_episodes/create_form', :locals => {:episode => episode} %>');
+$('.modal-footer').append('<%= escape_javascript render :partial => 'user_seen_episodes/create_form', :locals => {:episode => @episode} %>');
