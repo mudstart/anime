@@ -1,4 +1,6 @@
 class AnimeShowsController < ApplicationController
+  before_filter :authenticate_user!, :except => [:index, :show]
+
   # GET /anime_shows
   # GET /anime_shows.json
   def index

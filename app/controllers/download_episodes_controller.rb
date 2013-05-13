@@ -1,4 +1,5 @@
 class DownloadEpisodesController < ApplicationController
+  before_filter :authenticate_user!
 
   def create
     @episode = Episode.find params[:episode_id]

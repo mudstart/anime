@@ -3,11 +3,9 @@
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
 </div>
 <ul class="thumbnails">
-  <% Episode.order('created_at DESC').each do |episode| %>
+  <% @episodes.each do |episode| %>
   <%= render :partial => 'episodes/episode_list_item', :locals => {:episode => episode} %>
   <% end %>
 </ul>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_episode_path,
-            :class => 'btn btn-primary' %>
+<%= will_paginate @episodes %>
