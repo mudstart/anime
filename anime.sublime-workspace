@@ -528,10 +528,34 @@
 			}
 		},
 		{
-			"file": "config/deploy.rb",
+			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 2203,
+				"buffer_size": 4744,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/features/sign_in_spec.rb",
+			"settings":
+			{
+				"buffer_size": 208,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/features/view_homepage_spec.rb",
+			"settings":
+			{
+				"buffer_size": 196,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/support/helpers/sign_in_helpers.rb",
+			"settings":
+			{
+				"buffer_size": 394,
 				"line_ending": "Unix"
 			}
 		}
@@ -539,9 +563,37 @@
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
 	{
-		"height": 87.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"be",
+				"BeautifyRuby"
+			],
+			[
+				"mo",
+				"File: Move"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"mve",
+				"File: Move"
+			],
+			[
+				"shell",
+				"SublimeREPL: Shell"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
 			[
 				"git push",
 				"Git: Push"
@@ -549,10 +601,6 @@
 			[
 				"git comm",
 				"Git: Commit"
-			],
-			[
-				"git add",
-				"Git: Add..."
 			],
 			[
 				"linkto",
@@ -593,10 +641,6 @@
 			[
 				"git s",
 				"Git: Status"
-			],
-			[
-				"git com",
-				"Git: Commit"
 			],
 			[
 				"git psh",
@@ -659,10 +703,6 @@
 				"Git: Pull Current Branch"
 			],
 			[
-				"move",
-				"File: Move"
-			],
-			[
 				"snippet",
 				"Snippet: end (ERB)"
 			],
@@ -681,10 +721,6 @@
 			[
 				"git puh",
 				"Git: Push"
-			],
-			[
-				"be",
-				"BeautifyRuby"
 			],
 			[
 				"git ps",
@@ -991,7 +1027,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 530.0
+		"width": 436.0
 	},
 	"console":
 	{
@@ -1008,13 +1044,24 @@
 	},
 	"file_history":
 	[
+		"/Users/erikguzman/Projects/anime/db/seeds.rb",
+		"/Users/erikguzman/Projects/anime/spec/spec_helper.rb",
+		"/Users/erikguzman/Projects/anime/spec/helpers/shows_helper_spec.rb",
+		"/Users/erikguzman/Projects/anime/spec/helpers/sign_in_helpers.rb",
+		"/Users/erikguzman/Projects/anime/config/deploy.rb",
+		"/Users/erikguzman/Projects/anime/Gemfile",
+		"/Users/erikguzman/Projects/anime/config/initializers/secret_token.rb",
+		"/Users/erikguzman/Projects/anime/config/environment.rb",
+		"/Users/erikguzman/Projects/anime/spec/integration/sign_in_spec.rb",
+		"/Users/erikguzman/Projects/anime/spec/integration/view_homepage_spec.rb",
+		"/Users/erikguzman/Projects/anime/spec/features/spec_helper.rb",
+		"/Users/erikguzman/Projects/anime/test/test_helper.rb",
+		"/Users/erikguzman/Projects/anime/config/application.yml",
 		"/Users/erikguzman/Projects/anime/Capfile",
 		"/Users/erikguzman/Projects/anime/app/models/scrape.rb",
 		"/Users/erikguzman/Projects/anime/lib/tasks/update_all_episodes.rake",
-		"/Users/erikguzman/Projects/anime/config/deploy.rb",
 		"/Users/erikguzman/Projects/anime/app/controllers/episodes_controller.rb",
 		"/Users/erikguzman/Projects/anime/app/views/episodes/_nw_anime_iframe.html.erb",
-		"/Users/erikguzman/Projects/anime/Gemfile",
 		"/Users/erikguzman/Projects/anime/config/environments/production.rb",
 		"/Users/erikguzman/Projects/anime/config/routes.rb",
 		"/Users/erikguzman/Projects/anime/config/application.rb",
@@ -1026,7 +1073,6 @@
 		"/Users/erikguzman/Projects/anime/app/views/user_seen_episodes/_create_form.html.erb",
 		"/Users/erikguzman/Projects/anime/app/views/pages/homepage.html.erb",
 		"/Users/erikguzman/Projects/anime/app/assets/javascripts/application.js",
-		"/Users/erikguzman/Projects/anime/config/application.yml",
 		"/Users/erikguzman/Projects/anime/app/views/episodes/_display_video.html.erb",
 		"/Users/erikguzman/Projects/anime/.gitignore",
 		"/Users/erikguzman/Projects/anime/config/capistrano_database_yml.rb",
@@ -1054,7 +1100,6 @@
 		"/Users/erikguzman/Projects/anime/Procfile",
 		"/Users/erikguzman/Projects/anime/db/schema.rb",
 		"/Users/erikguzman/Projects/anime/app/controllers/download_episode_controller.rb",
-		"/Users/erikguzman/Projects/anime/config/environment.rb",
 		"/Users/erikguzman/Projects/anime/config/deploy/database.yml.erb",
 		"/Users/erikguzman/Projects/anime/config/database.yml",
 		"/Users/erikguzman/Projects/anime/app/views/anime_shows/index.html.erb",
@@ -1088,7 +1133,6 @@
 		"/Users/erikguzman/Projects/anime/db/migrate/20130408054406_add_description_to_show.rb",
 		"/Users/erikguzman/Projects/anime/db/migrate/20130410052319_rename_shows_table.rb",
 		"/Users/erikguzman/Projects/anime/spec/controllers/shows_controller_spec.rb",
-		"/Users/erikguzman/Projects/anime/spec/helpers/shows_helper_spec.rb",
 		"/Users/erikguzman/Projects/anime/spec/models/show_spec.rb",
 		"/Users/erikguzman/Projects/anime/spec/requests/shows_spec.rb",
 		"/Users/erikguzman/Projects/anime/spec/routing/shows_routing_spec.rb",
@@ -1127,15 +1171,7 @@
 		"/Users/erikguzman/Projects/blue/app/views/global_search/show.js",
 		"/Users/erikguzman/Projects/blue/app/views/global_search/_form.html.erb",
 		"/Users/erikguzman/Projects/blue/app/views/global_search/_global_search_results.html.erb",
-		"/Users/erikguzman/Projects/blue/spec/controllers/global_searches_controller_spec.rb",
-		"/Users/erikguzman/Projects/blue/spec/controllers/global_search_controller_spec.rb",
-		"/Users/erikguzman/Projects/blue/app/helpers/global_search_helper.rb",
-		"/Users/erikguzman/Projects/blue/app/controllers/global_search_controller.rb",
-		"/Users/erikguzman/Projects/blue/app/views/bluebags/_bag_search_form.html.erb",
-		"/Users/erikguzman/Projects/blue/app/assets/javascripts/bluebags.js.coffee",
-		"/Users/erikguzman/Projects/blue/app/views/global_search/show.html",
-		"/Users/erikguzman/Projects/blue/app/views/global_search/_search_result.html.erb",
-		"/Users/erikguzman/Projects/blue/app/views/shared/_search_result.html.erb"
+		"/Users/erikguzman/Projects/blue/spec/controllers/global_searches_controller_spec.rb"
 	],
 	"find":
 	{
@@ -1336,23 +1372,103 @@
 				},
 				{
 					"buffer": 1,
-					"file": "config/deploy.rb",
+					"file": "app/views/layouts/application.html.erb",
 					"settings":
 					{
-						"buffer_size": 2203,
+						"buffer_size": 4744,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1388,
-								1388
+								3307,
+								3307
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1334.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "spec/features/sign_in_spec.rb",
+					"settings":
+					{
+						"buffer_size": 208,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								208,
+								208
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "spec/features/view_homepage_spec.rb",
+					"settings":
+					{
+						"buffer_size": 196,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								196,
+								196
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "spec/support/helpers/sign_in_helpers.rb",
+					"settings":
+					{
+						"buffer_size": 394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -1419,6 +1535,38 @@
 		"selected_items":
 		[
 			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"la",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"testhelpe",
+				"test/test_helper.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"helper",
+				"spec/spec_helper.rb"
+			],
+			[
+				"spec",
+				"spec/integration/view_homepage_spec.rb"
+			],
+			[
+				"app",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"config",
+				"config/initializers/secret_token.rb"
+			],
+			[
 				"de",
 				"config/deploy.rb"
 			],
@@ -1427,20 +1575,12 @@
 				"Capfile"
 			],
 			[
-				"gem",
-				"Gemfile"
-			],
-			[
 				"rout",
 				"config/routes.rb"
 			],
 			[
 				"prod",
 				"config/environments/production.rb"
-			],
-			[
-				"app",
-				"config/application.rb"
 			],
 			[
 				"iframe",
@@ -1505,10 +1645,6 @@
 			[
 				"dep",
 				"config/deploy.rb"
-			],
-			[
-				"config",
-				"config/capistrano_database_yml.rb"
 			],
 			[
 				"down",
@@ -1855,10 +1991,6 @@
 				"app/views/anime_shows/_form.html.erb"
 			],
 			[
-				"helper",
-				"app/helpers/shows_helper.rb"
-			],
-			[
 				"epindex",
 				"app/views/episodes/index.html.erb"
 			],
@@ -1913,22 +2045,6 @@
 			[
 				"globalsearchform",
 				"app/views/global_searches/_form.html.erb"
-			],
-			[
-				"data",
-				"config/database.yml"
-			],
-			[
-				"bluebag",
-				"app/models/bluebag.rb"
-			],
-			[
-				"glohep",
-				"app/helpers/global_searches_helper.rb"
-			],
-			[
-				"post",
-				"app/models/post.rb"
 			]
 		],
 		"width": 0.0
@@ -1944,7 +2060,7 @@
 	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 187.0,
 	"status_bar_visible": true
 }
