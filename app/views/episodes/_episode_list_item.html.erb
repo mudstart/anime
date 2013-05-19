@@ -4,7 +4,7 @@
       <h4><%= episode.anime_show.name %></h3>
       <p>Episode: <%= episode.number %></p>
       <p>Posted: <%= episode.created_at.strftime('%m/%d/%Y') %></p>
-      <%= render :partial => 'user_seen_episodes/create_form', :locals => {:episode => episode} %>
   </a>
+  <%= render :partial => 'user_seen_episodes/create_form', :locals => {:episode => episode} %>
   <%= link_to "Preview", episode, 'data-toggle' => 'modal', 'data-target' => '#modal', :remote => true, :class => 'btn btn-mini display_inline preview_video' %>
 </li>

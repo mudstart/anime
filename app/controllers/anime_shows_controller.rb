@@ -42,7 +42,7 @@ class AnimeShowsController < ApplicationController
   # POST /anime_shows
   # POST /anime_shows.json
   def create
-    @anime_show = Scrape.show(params[:anime_show][:url])
+    @anime_show = NarutoWireCrawler.show(params[:anime_show][:url])
 
     respond_to do |format|
       if @anime_show.persisted?
@@ -59,7 +59,7 @@ class AnimeShowsController < ApplicationController
   # PUT /anime_shows/1.json
   def update
     @anime_show = AnimeShow.find(params[:id])
-    Scrape.update_show(@anime_show)
+    NarutoWireCrawler.update_show(@anime_show)
 
     respond_to do |format|
       if @anime_show.update_attributes(params[:anime_show])

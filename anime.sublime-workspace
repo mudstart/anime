@@ -542,14 +542,46 @@
 				"buffer_size": 2174,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "app/views/pages/homepage.html.erb",
+			"settings":
+			{
+				"buffer_size": 455,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/deploy.rb",
+			"settings":
+			{
+				"buffer_size": 1775,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
 	{
-		"height": 87.0,
+		"height": 187.0,
 		"selected_items":
 		[
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
 			[
 				"git push",
 				"Git: Push"
@@ -557,10 +589,6 @@
 			[
 				"git comm",
 				"Git: Commit"
-			],
-			[
-				"git add",
-				"Git: Add..."
 			],
 			[
 				"git ush",
@@ -573,10 +601,6 @@
 			[
 				"be",
 				"BeautifyRuby"
-			],
-			[
-				"git com",
-				"Git: Commit"
 			],
 			[
 				"git ad",
@@ -749,10 +773,6 @@
 			[
 				"bea",
 				"BeautifyRuby"
-			],
-			[
-				"git co",
-				"Git: Commit"
 			],
 			[
 				"git sa",
@@ -1331,7 +1351,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -1382,7 +1402,7 @@
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
-						"translation.x": 310.0,
+						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -1400,8 +1420,62 @@
 						"selection":
 						[
 							[
-								444,
-								451
+								588,
+								588
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/pages/homepage.html.erb",
+					"settings":
+					{
+						"buffer_size": 455,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								455,
+								455
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "config/deploy.rb",
+					"settings":
+					{
+						"buffer_size": 1775,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1497,
+								1497
 							]
 						],
 						"settings":
@@ -1472,6 +1546,14 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"deplo",
+				"config/deploy.rb"
+			],
+			[
+				"home",
+				"app/views/pages/homepage.html.erb"
+			],
 			[
 				"epcon",
 				"app/controllers/episodes_controller.rb"
@@ -1609,10 +1691,6 @@
 				"app/assets/stylesheets/application.css"
 			],
 			[
-				"home",
-				"app/views/pages/homepage.html.erb"
-			],
-			[
 				"apptml",
 				"app/views/layouts/application.html.erb"
 			],
@@ -1663,10 +1741,6 @@
 			[
 				"sc",
 				"app/models/scrape.rb"
-			],
-			[
-				"deplo",
-				"config/deploy.rb"
 			],
 			[
 				"downcre",

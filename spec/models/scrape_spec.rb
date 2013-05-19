@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Scrape do
+describe NarutoWireCrawler do
   it "should have 1 episode for the show" do
-    show = Scrape.show("http://www.nwanime.com/1583/eureka-seven-pocket-full...")
+    show = NarutoWireCrawler.show("http://www.nwanime.com/1583/eureka-seven-pocket-full...")
 
     show.name.should == "Eureka Seven: Pocket Full of Rainbows"
     show.url.should == "http://www.nwanime.com/1583/eureka-seven-pocket-full..."
@@ -16,7 +16,7 @@ describe Scrape do
   end
 
   it "should have 25 episode for the show" do
-    show = Scrape.show("http://www.nwanime.com/2763/sword-art-online")
+    show = NarutoWireCrawler.show("http://www.nwanime.com/2763/sword-art-online")
 
     show.name.should == "Sword Art Online"
     show.url.should == "http://www.nwanime.com/2763/sword-art-online"
