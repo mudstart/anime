@@ -2,7 +2,7 @@ class NarutoWireCrawler
   require 'nokogiri'
   require 'open-uri'
 
-  def self.show(url)
+  def self.create_show(url)
     scrape_show = NarutoWireCrawler.new(url)
     show = scrape_show.create_show
     scrape_show.find_and_create_episodes(url)
@@ -32,6 +32,7 @@ class NarutoWireCrawler
     doc.css('div#category_desc h2').each do |name|
       name_show_name = name.content
     end
+
 
     image_url = find_show_image(doc)
 
@@ -82,7 +83,6 @@ class NarutoWireCrawler
   end
 
   def find_show_image(doc)
-    description = doc.at_css('div#category_desc').content
     style = doc.at_css('div.moduleEntryThumb-med')['style']
     style.match(/\((.*)\)/m)[0]
     $1

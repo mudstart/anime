@@ -42,7 +42,7 @@ class AnimeShowsController < ApplicationController
   # POST /anime_shows
   # POST /anime_shows.json
   def create
-    @anime_show = NarutoWireCrawler.show(params[:anime_show][:url])
+    @anime_show = NarutoWireCrawler.create_show(params[:anime_show][:url])
 
     respond_to do |format|
       if @anime_show.persisted?

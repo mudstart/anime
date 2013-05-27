@@ -83,6 +83,11 @@ GEM
       actionmailer (>= 3.0.4)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    factory_girl (2.6.4)
+      activesupport (>= 2.3.9)
+    factory_girl_rails (1.7.0)
+      factory_girl (~> 2.6.0)
+      railties (>= 3.0.0)
     ffi (1.6.0)
     figaro (0.6.4)
       bundler (~> 1.0)
@@ -201,6 +206,8 @@ GEM
       multi_json (~> 1.0)
       rubyzip
       websocket (~> 1.0.4)
+    shoulda-matchers (2.0.0)
+      activesupport (>= 3.0.0)
     slop (3.4.4)
     sprockets (2.2.2)
       hike (~> 1.2)
@@ -244,6 +251,7 @@ DEPENDENCIES
   devise
   dj_mon
   exception_notification
+  factory_girl_rails (= 1.7.0)
   figaro
   guard-rspec
   high_voltage
@@ -258,6 +266,7 @@ DEPENDENCIES
   rspec-rails
   ruby-debug
   sass-rails (~> 3.2.3)
+  shoulda-matchers (= 2.0.0)
   sqlite3
   therubyracer
   twitter-bootstrap-rails

@@ -30,9 +30,6 @@ class Episode < ActiveRecord::Base
 
   def video_remote_url(url_value)
     self.video = download_remote_file(url_value)
-    # Assuming url_value is http://example.com/photos/face.png
-    # avatar_file_name == "face.png"
-    # avatar_content_type == "image/png"
     self.video
   end
 
@@ -52,6 +49,6 @@ class Episode < ActiveRecord::Base
   end
 
   def download_episode
-    GetMp4.delay.get_video(self)
+    GetMp4.delay.get_video(self) unless Rails.env.eql?('test')
   end
 end

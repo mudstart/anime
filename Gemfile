@@ -28,11 +28,13 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'sqlite3'
+  gem 'factory_girl_rails', ' 1.7.0'
 end
 
 group :test do
   gem "guard-rspec"
   gem 'rb-fsevent', '~> 0.9'
+  gem 'shoulda-matchers', '2.0.0'
 end
 
 # Gems used only for assets and not required
