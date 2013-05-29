@@ -3,9 +3,7 @@
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
 </div>
 <ul class="thumbnails">
-  <% @episodes.each do |episode| %>
-  <%= render :partial => 'episodes/episode_list_item', :locals => {:episode => episode} %>
-  <% end %>
+  <%= render @episodes %>
 </ul>
 
 <%= will_paginate @episodes %>

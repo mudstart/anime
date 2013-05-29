@@ -11,5 +11,11 @@ class User < ActiveRecord::Base
   attr_accessible :email, :password, :password_confirmation, :remember_me
 
   has_many :user_seen_episodes, :dependent => :destroy
+  has_many :subscriptions, :dependent => :destroy
+  has_many :shows_subscribed_to, :through => :subscriptions
+
+  def unseen_episodes
+
+  end
 
 end

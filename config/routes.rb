@@ -1,7 +1,11 @@
 AnimeErikkatCom::Application.routes.draw do
+  resources :subscriptions
+
+
   mount DjMon::Engine => 'dj_mon'
 
   resources :anime_shows
+  resource :home_page
 
   devise_for :users
 
@@ -12,7 +16,7 @@ AnimeErikkatCom::Application.routes.draw do
 
   resources :anime_shows
 
-  root :to => 'high_voltage/pages#show', :id => 'homepage'
+  root :to => 'home_page#homepage', :id => 'homepage'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

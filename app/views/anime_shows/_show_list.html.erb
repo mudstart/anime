@@ -1,5 +1,3 @@
 <ul class="thumbnails">
-  <% @anime_show.episodes.each do |episode| %>
-	<%= render :partial => 'episodes/episode_list_item', :locals => {:episode => episode} %>
-  <% end %>
+  <%= render @anime_show.episodes %>
 </ul>

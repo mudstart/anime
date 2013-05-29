@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130425234638) do
+ActiveRecord::Schema.define(:version => 20130528060827) do
 
   create_table "anime_shows", :force => true do |t|
     t.text     "url"
@@ -53,6 +53,14 @@ ActiveRecord::Schema.define(:version => 20130425234638) do
   end
 
   add_index "episodes", ["anime_show_id"], :name => "index_episodes_on_show_id"
+
+  create_table "subscriptions", :force => true do |t|
+    t.integer "user_id"
+    t.integer "anime_show_id"
+  end
+
+  add_index "subscriptions", ["anime_show_id"], :name => "index_subscriptions_on_anime_show_id"
+  add_index "subscriptions", ["user_id"], :name => "index_subscriptions_on_user_id"
 
   create_table "user_seen_episodes", :force => true do |t|
     t.integer  "user_id"

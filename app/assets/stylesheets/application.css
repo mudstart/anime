@@ -49,11 +49,11 @@ li.show_info_item {
 .preview_video {
     position: absolute;
     right: 5px;
-    bottom: 27px;
+    bottom: 10px;
 }
 
-.mark_seen {
+.modal .mark_seen, .show_info_item .mark_seen {
   position: absolute;
   left: 5px;
-  bottom: 6px;
+  bottom: -10px;
 }

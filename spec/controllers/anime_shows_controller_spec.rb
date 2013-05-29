@@ -24,7 +24,7 @@ describe AnimeShowsController do
   # AnimeShow. As you add validations to AnimeShow, be sure to
   # update the return value of this method accordingly.
   def valid_attributes
-    {  }
+    { :name => 'Simple Show', :url => 'www.nwanime.com' }
   end
 
   # This should return the minimal set of values that should be in the session
@@ -52,6 +52,8 @@ describe AnimeShowsController do
 
   describe "GET new" do
     it "assigns a new anime_show as @anime_show" do
+      user = create_user
+      sign_in user
       get :new, {}, valid_session
       assigns(:anime_show).should be_a_new(AnimeShow)
     end
@@ -59,8 +61,10 @@ describe AnimeShowsController do
 
   describe "GET edit" do
     it "assigns the requested anime_show as @anime_show" do
+      user = create_user
+      sign_in user
       anime_show = AnimeShow.create! valid_attributes
-      get :edit, {:id => anime_show.to_param}, valid_session
+      get :edit, {:id => anime_show.id}, valid_session
       assigns(:anime_show).should eq(anime_show)
     end
   end

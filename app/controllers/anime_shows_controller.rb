@@ -59,14 +59,15 @@ class AnimeShowsController < ApplicationController
   # PUT /anime_shows/1.json
   def update
     @anime_show = AnimeShow.find(params[:id])
-    NarutoWireCrawler.update_show(@anime_show)
+    # NarutoWireCrawler.update_show(@anime_show)
 
     respond_to do |format|
       if @anime_show.update_attributes(params[:anime_show])
         format.html { redirect_to @anime_show, :notice => 'Anime show was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { redirect_to @anime_show }
+        debugger
+        format.html { redirect_to @anime_show, :alert => 'Show couldnt be updated' }
         format.json { render :json => @anime_show.errors, :status => :unprocessable_entity }
       end
     end
