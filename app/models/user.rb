@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
 
   has_many :user_seen_episodes, :dependent => :destroy
   has_many :subscriptions, :dependent => :destroy
-  has_many :shows_subscribed_to, :through => :subscriptions
+  has_many :shows_subscribed_to, :through => :subscriptions, :source => :anime_show
 
   def unseen_episodes
 

@@ -2,22 +2,11 @@ class SubscriptionsController < ApplicationController
   # GET /subscriptions
   # GET /subscriptions.json
   def index
-    @subscriptions = Subscription.all
+    @subscriptions = current_user.shows_subscribed_to
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => @subscriptions }
-    end
-  end
-
-  # GET /subscriptions/1
-  # GET /subscriptions/1.json
-  def show
-    @subscription = Subscription.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render :json => @subscription }
     end
   end
 
@@ -32,15 +21,10 @@ class SubscriptionsController < ApplicationController
     end
   end
 
-  # GET /subscriptions/1/edit
-  def edit
-    @subscription = Subscription.find(params[:id])
-  end
-
   # POST /subscriptions
   # POST /subscriptions.json
   def create
-    @subscription = Subscription.new(params[:subscription])
+    @subscription = current_user.subscriptions.build(:anime_show_id => params[:anime_show_id])
 
     respond_to do |format|
       if @subscription.save
@@ -48,22 +32,6 @@ class SubscriptionsController < ApplicationController
         format.json { render :json => @subscription, :status => :created, :location => @subscription }
       else
         format.html { render :action => "new" }
-        format.json { render :json => @subscription.errors, :status => :unprocessable_entity }
-      end
-    end
-  end
-
-  # PUT /subscriptions/1
-  # PUT /subscriptions/1.json
-  def update
-    @subscription = Subscription.find(params[:id])
-
-    respond_to do |format|
-      if @subscription.update_attributes(params[:subscription])
-        format.html { redirect_to @subscription, :notice => 'Subscription was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render :action => "edit" }
         format.json { render :json => @subscription.errors, :status => :unprocessable_entity }
       end
     end

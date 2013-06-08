@@ -542,14 +542,62 @@
 				"buffer_size": 282,
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "spec/support/helpers/sign_in_helpers.rb",
+			"settings":
+			{
+				"buffer_size": 443,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/features/sign_in_spec.rb",
+			"settings":
+			{
+				"buffer_size": 216,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/anime_shows_controller.rb",
+			"settings":
+			{
+				"buffer_size": 2374,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/episodes/_episode.html.erb",
+			"settings":
+			{
+				"buffer_size": 723,
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 87.0,
 		"selected_items":
 		[
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"gti com",
+				"Git: Quick Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
 			[
 				"be",
 				"BeautifyRuby"
@@ -561,14 +609,6 @@
 			[
 				"rename",
 				"File: Rename"
-			],
-			[
-				"git com",
-				"Git: Commit"
-			],
-			[
-				"git add",
-				"Git: Add..."
 			],
 			[
 				"gitps",
@@ -587,16 +627,8 @@
 				"Git: Push"
 			],
 			[
-				"git push",
-				"Git: Push"
-			],
-			[
 				"git ush",
 				"Git: Push"
-			],
-			[
-				"gti com",
-				"Git: Quick Commit"
 			],
 			[
 				"git ad",
@@ -1027,7 +1059,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 525.0
+		"width": 472.0
 	},
 	"console":
 	{
@@ -1044,13 +1076,14 @@
 	},
 	"file_history":
 	[
+		"/Users/erikguzman/Projects/anime/spec/spec_helper.rb",
+		"/Users/erikguzman/Projects/anime/spec/support/devise.rb",
 		"/Users/erikguzman/Projects/anime/app/models/user.rb",
 		"/Users/erikguzman/Projects/anime/app/helpers/home_page_helper.rb",
 		"/Users/erikguzman/Projects/anime/app/views/home_page/homepage.html.erb",
 		"/Users/erikguzman/Projects/anime/app/models/subscription.rb",
 		"/Users/erikguzman/Projects/anime/app/controllers/home_page_controller.rb",
 		"/Users/erikguzman/Projects/anime/spec/factories/subscriptions.rb",
-		"/Users/erikguzman/Projects/anime/spec/spec_helper.rb",
 		"/Users/erikguzman/Projects/anime/db/migrate/20130528060827_create_subscriptions.rb",
 		"/Users/erikguzman/Projects/anime/app/views/anime_shows/show.html.erb",
 		"/Users/erikguzman/Projects/anime/app/views/anime_shows/_show_list.html.erb",
@@ -1075,7 +1108,6 @@
 		"/Users/erikguzman/Projects/anime/spec/support/helpers/sign_in_helpers.rb",
 		"/Users/erikguzman/Projects/anime/spec/features/view_homepage_spec.rb",
 		"/Users/erikguzman/Projects/anime/spec/features/sign_in_spec.rb",
-		"/Users/erikguzman/Projects/anime/spec/support/devise.rb",
 		"/Users/erikguzman/Projects/anime/spec/routing/episodes_routing_spec.rb",
 		"/Users/erikguzman/Projects/anime/spec/routing/anime_shows_routing_spec.rb",
 		"/Users/erikguzman/Projects/anime/spec/requests/anime_shows_spec.rb",
@@ -1342,7 +1374,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -1413,13 +1445,121 @@
 						"selection":
 						[
 							[
-								231,
-								231
+								282,
+								282
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "spec/support/helpers/sign_in_helpers.rb",
+					"settings":
+					{
+						"buffer_size": 443,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								272,
+								148
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "spec/features/sign_in_spec.rb",
+					"settings":
+					{
+						"buffer_size": 216,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								216,
+								216
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RSpec/RSpec.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/controllers/anime_shows_controller.rb",
+					"settings":
+					{
+						"buffer_size": 2374,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								657,
+								657
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/episodes/_episode.html.erb",
+					"settings":
+					{
+						"buffer_size": 723,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								717,
+								557
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1484,6 +1624,18 @@
 		"selected_items":
 		[
 			[
+				"_episode",
+				"app/views/episodes/_episode.html.erb"
+			],
+			[
+				"spec",
+				"spec/spec_helper.rb"
+			],
+			[
+				"spech",
+				"spec/spec_helper.rb"
+			],
+			[
 				"homhel",
 				"app/helpers/home_page_helper.rb"
 			],
@@ -1542,10 +1694,6 @@
 			[
 				"naruto",
 				"app/models/naruto_wire_crawler.rb"
-			],
-			[
-				"spec",
-				"spec/models/scrape_spec.rb"
 			],
 			[
 				"spc",
@@ -1986,14 +2134,6 @@
 			[
 				"new",
 				"app/views/anime_shows/new.html.erb"
-			],
-			[
-				"shownew",
-				"app/views/anime_shows/new.html.erb"
-			],
-			[
-				"index",
-				"app/views/anime_shows/index.html.erb"
 			]
 		],
 		"width": 0.0

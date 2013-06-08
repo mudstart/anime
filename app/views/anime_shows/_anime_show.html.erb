@@ -1,0 +1,13 @@
+<li class="span4">
+  <div class="thumbnail show">
+    <%= link_to anime_show_path(anime_show) do %>
+      <img data-src="holder.js/300x200" alt="300x200" style="width: 300px; height: 200px;" src="<%= anime_show.image_url %>">
+    <% end -%>
+    <div class="caption">
+      <span class="label label-inverse"><%= anime_show.episodes.count %> Episodes</span>
+      <h4><%= anime_show.name %></h3>
+      <p><%= truncate(anime_show.description, :length => 100) %></p>
+      <%= subscribe_button(anime_show) %>
+    </div>
+  </div>
+</li>
