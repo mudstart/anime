@@ -73,21 +73,9 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3" id="side_well">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Anime Shows</li>
-              <% AnimeShow.all.each do |anime| %>
-                <li>
-                  <span>
-                    <%= link_to truncate(anime.name, :length => 15), anime  %>
-                    <span class="badge"><%= anime.episodes.count %></span>
-                  </span>
-                </li>
-              <% end %>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
+
+        <%= render 'layouts/side_nav' %>
+
         <div class="span9">
           <%= bootstrap_flash %>
           <%#= render_breadcrumbs %>

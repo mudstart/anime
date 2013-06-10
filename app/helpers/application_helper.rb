@@ -6,4 +6,18 @@ module ApplicationHelper
       User.new
     end
   end
+
+  def anime_show_subscriptions
+    if user_signed_in?
+      current_user.shows_subscribed_to
+    else
+      AnimeShow.limit(5)
+    end
+  end
+
+  def new_indicator(show)
+    unless guest_or_current_user.has_seen_all_episodes?(show)
+      "<span class='unseen_episodes'>NEW</span>"
+    end
+  end
 end

@@ -2,7 +2,7 @@ module HomePageHelper
 
   def homepage_episodes
     if user_signed_in?
-      Episode.unseen_episodes(current_user)
+      current_user.unseen_anime_show_episodes
     else
       Episode.limit(10)
     end

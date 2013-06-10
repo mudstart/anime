@@ -18,8 +18,20 @@ class User < ActiveRecord::Base
 
   has_many :anime_show_episodes, :through => :shows_subscribed_to, :source => :episodes
 
+  def has_seen_all_episodes?(show)
+    seen_episodes.where(:anime_show_id => show.id).count == show.episodes.count
+  end
+
   def unseen_anime_show_episodes
     anime_show_episodes.where("episodes.id NOT IN (?)", unseen_episode_ids)
+  end
+
+  def subscribe_to_show(show)
+    subscriptions.create({:anime_show_id => show.id})
+  end
+
+  def mark_seen(episode_id)
+    user_seen_episodes.create({:episode_id => episode_id})
   end
 
   private

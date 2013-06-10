@@ -5,16 +5,20 @@ module SignInHelpers
   end
 
   def sign_in_as(email, password)
-    create_user
+    user = create_user(email, password)
 
     visit root_path
+    click_link "Sign In"
+
     fill_in 'Email', :with => email
     fill_in 'Password', :with => password
     click_button 'Sign in'
+
+    user
   end
 
-  def create_user
-    User.create(:email => 'erik@erikkat.com', :password => 'password')
+  def create_user(email, password)
+    User.create(:email => email, :password => password)
   end
 end
 
