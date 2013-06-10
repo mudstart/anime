@@ -7,7 +7,7 @@ class Episode < ActiveRecord::Base
   validates :name, :number, :url, :anime_show_id, :presence => true
   validates :number, :uniqueness => { :scope => :anime_show_id }
 
-  default_scope order("created_at DESC")
+  default_scope order("episodes.created_at DESC")
   scope :unseen_episodes, lambda { |user| where("episodes.id NOT IN (?)", user.user_seen_episodes.select(:episode_id).map(&:episode_id)) }
 
   has_attached_file :video,

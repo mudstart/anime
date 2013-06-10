@@ -5,5 +5,5 @@ class AnimeShow < ActiveRecord::Base
   has_many :episodes, :dependent => :destroy
   has_many :subscriptions, :dependent => :destroy
 
-  default_scope { order("updated_at DESC") }
+  default_scope { order("anime_shows.updated_at DESC") }
 end

@@ -7,14 +7,21 @@ describe AnimeShow do
 
   it { should have_many(:episodes) }
 
-  it "creates a minimum valid show" do
-    show = AnimeShow.new({:name => "Anime Show", :url => "www.nwanime.com"})
+  it { should have_many(:subscriptions)}
+
+  it "has a valid factory" do
+    show = FactoryGirl.create(:anime_show)
     show.should be_valid
   end
 
-  it "has no episodes" do
-    show = AnimeShow.create({:name => "Anime Show", :url => "www.nwanime.com"})
+  it "verify there are no episodes" do
+    show = FactoryGirl.create(:anime_show)
     show.episodes.should eq []
   end
 
+  it "verify there are episodes" do
+    show = FactoryGirl.create(:anime_show)
+    FactoryGirl.create(:episode, :anime_show_id => show.id)
+    show.episodes.count.should eq 1
+  end
 end

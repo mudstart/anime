@@ -89,6 +89,8 @@ GEM
     factory_girl_rails (1.7.0)
       factory_girl (~> 2.6.0)
       railties (>= 3.0.0)
+    faker (1.1.2)
+      i18n (~> 0.5)
     ffi (1.6.0)
     figaro (0.6.4)
       bundler (~> 1.0)
@@ -254,6 +256,7 @@ DEPENDENCIES
   dj_mon
   exception_notification
   factory_girl_rails (= 1.7.0)
+  faker
   figaro
   guard-rspec
   high_voltage
