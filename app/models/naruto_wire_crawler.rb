@@ -33,12 +33,11 @@ class NarutoWireCrawler
       name_show_name = name.content
     end
 
-
     image_url = find_show_image(doc)
 
     if name_show_name
       @show = AnimeShow.create(:name => name_show_name,
-        :description => description,:url => @show_url, :image_url => image_url)
+        :description => '',:url => @show_url, :image_url => image_url)
     end
   end
 
