@@ -49,22 +49,13 @@
             <ul class="nav">
                 <li><%= link_to "Home", root_path  %></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                      Shows
-                      <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><%= link_to "All", anime_shows_path  %></li>
-                      <% AnimeShow.all.each do |anime| %>
-                        <li><%= link_to anime.name, anime  %></li>
-                      <% end %>
-                    </ul>
+                    <%= link_to 'Anime Shows', anime_shows_path %>
                 </li>
-                <li><%= link_to "Episodes", episodes_path  %></li>
                 <% if user_signed_in? %>
-                <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete  %></li>
+                  <li><%= link_to "Your Subscriptions", subscriptions_path  %></li>
+                  <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete  %></li>
                 <% else %>
-                <li><%= link_to "Sign In", new_user_session_path %></li>
+                  <li><%= link_to "Sign In", new_user_session_path %></li>
                 <% end %>
             </ul>
         </nav>

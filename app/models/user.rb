@@ -26,6 +26,10 @@ class User < ActiveRecord::Base
     anime_show_episodes.where("episodes.id NOT IN (?)", unseen_episode_ids)
   end
 
+  def is_subscribed?(show)
+    shows_subscribed_to.include?(show)
+  end
+
   def subscribe_to_show(show)
     subscriptions.create({:anime_show_id => show.id})
   end

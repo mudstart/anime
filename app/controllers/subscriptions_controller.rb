@@ -1,4 +1,6 @@
 class SubscriptionsController < ApplicationController
+  before_filter :check_if_confirmed
+
   # GET /subscriptions
   # GET /subscriptions.json
   def index
@@ -24,11 +26,12 @@ class SubscriptionsController < ApplicationController
   # POST /subscriptions
   # POST /subscriptions.json
   def create
-    @subscription = current_user.subscriptions.build(:anime_show_id => params[:anime_show_id])
+    @anime_show = AnimeShow.find(params[:anime_show_id])
+    @subscription = current_user.subscribe_to_show(@anime_show)
 
     respond_to do |format|
       if @subscription.save
-        format.html { redirect_to @subscription, :notice => 'Subscription was successfully created.' }
+        format.html { redirect_to :back, :notice => 'Subscription was successfully created.' }
         format.json { render :json => @subscription, :status => :created, :location => @subscription }
       else
         format.html { render :action => "new" }
@@ -40,7 +43,7 @@ class SubscriptionsController < ApplicationController
   # DELETE /subscriptions/1
   # DELETE /subscriptions/1.json
   def destroy
-    @subscription = Subscription.find(params[:id])
+    @subscription = current_user.subscriptions.find_by_anime_show_id(params[:id])
     @subscription.destroy
 
     respond_to do |format|

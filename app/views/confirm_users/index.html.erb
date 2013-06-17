@@ -1,0 +1,11 @@
+<h1>Users List</h1>
+<table class="table table-striped">
+    <tr>
+        <td>E-mail</td>
+        <td>Confirmed</td>
+        <td></td>
+    </tr>
+    <% @users.each do |user| %>
+       <tr><%= render user %></tr>
+    <% end %>
+</table>

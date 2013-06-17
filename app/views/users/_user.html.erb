@@ -1,0 +1,7 @@
+<td><%= user.email %></td>
+<td><%= user.confirmed %></td>
+<% unless user.confirmed %>
+<td>
+    <%= button_to 'Confirm', confirm_user_path(user), :method => :put %>
+</td>
+<% end -%>

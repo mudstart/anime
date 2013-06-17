@@ -17,7 +17,7 @@ module ApplicationHelper
 
   def new_indicator(show)
     unless guest_or_current_user.has_seen_all_episodes?(show)
-      "<span class='unseen_episodes'>NEW</span>"
+      raw '<span class="label label-info">NEW</span>'
     end
   end
 end

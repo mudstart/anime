@@ -4,10 +4,13 @@
   <p><%= @anime_show.description %></p>
   <p>
     <div class="display_inline">
+        <%= subscribe_button @anime_show %>
+    </div>
+    <div class="display_inline">
         <%= link_to "Edit Info", edit_anime_show_path(@anime_show), :class => "btn btn-primary" %>
     </div>
     <div class="display_inline">
-      <%= button_to "Update Episodes", anime_show_path(@anime_show),
+      <%= button_to "Fetch New Episodes", episode_update_show_path(@anime_show),
         :class => 'btn',
         :disable_with => 'loading...',
         :method => :put %>

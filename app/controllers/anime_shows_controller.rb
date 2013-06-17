@@ -1,5 +1,6 @@
 class AnimeShowsController < ApplicationController
   before_filter :authenticate_user!, :except => [:index, :show]
+  before_filter :check_if_confirmed
 
   # GET /anime_shows
   # GET /anime_shows.json
@@ -59,7 +60,6 @@ class AnimeShowsController < ApplicationController
   # PUT /anime_shows/1.json
   def update
     @anime_show = AnimeShow.find(params[:id])
-    # NarutoWireCrawler.update_show(@anime_show)
 
     respond_to do |format|
       if @anime_show.update_attributes(params[:anime_show])

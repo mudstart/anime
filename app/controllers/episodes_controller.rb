@@ -1,5 +1,6 @@
 class EpisodesController < ApplicationController
   before_filter :authenticate_user!, :except => :index
+  before_filter :check_if_confirmed
 
   # GET /episodes
   # GET /episodes.json
