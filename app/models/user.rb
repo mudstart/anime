@@ -1,12 +1,7 @@
 class User < ActiveRecord::Base
 
-  if Rails.env.production?
-    devise :database_authenticatable,
-      :recoverable, :rememberable, :trackable, :validatable
-  else
-    devise :database_authenticatable, :registerable,
-      :recoverable, :rememberable, :trackable, :validatable
-  end
+  devise :database_authenticatable, :registerable,
+    :recoverable, :rememberable, :trackable, :validatable
 
   attr_accessible :email, :password, :password_confirmation, :remember_me
 
@@ -40,13 +35,13 @@ class User < ActiveRecord::Base
 
   private
 
-  # work around for NOT IN (NULL) bug for empty array
-  def unseen_episode_ids
-    if seen_episode_ids.empty?
-      ['']
-    else
-      seen_episode_ids
+    # work around for NOT IN (NULL) bug for empty array
+    def unseen_episode_ids
+      if seen_episode_ids.empty?
+        ['']
+      else
+        seen_episode_ids
+      end
     end
-  end
 
 end
