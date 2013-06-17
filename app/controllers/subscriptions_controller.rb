@@ -4,7 +4,7 @@ class SubscriptionsController < ApplicationController
   # GET /subscriptions
   # GET /subscriptions.json
   def index
-    @subscriptions = current_user.shows_subscribed_to
+    @subscriptions = current_user.shows_subscribed_to.reorder(:name)
 
     respond_to do |format|
       format.html # index.html.erb
