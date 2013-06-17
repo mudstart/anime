@@ -563,13 +563,9 @@
 	"build_system": "Packages/Ruby/Ruby.sublime-build",
 	"command_palette":
 	{
-		"height": 87.0,
+		"height": 167.0,
 		"selected_items":
 		[
-			[
-				"git push",
-				"Git: Push Current Branch"
-			],
 			[
 				"git com",
 				"Git: Commit"
@@ -577,6 +573,14 @@
 			[
 				"git add",
 				"Git: Add..."
+			],
+			[
+				"be",
+				"BeautifyRuby"
+			],
+			[
+				"git push",
+				"Git: Push Current Branch"
 			],
 			[
 				"redit",
@@ -597,10 +601,6 @@
 			[
 				"controller",
 				"Snippet: Create controller class"
-			],
-			[
-				"be",
-				"BeautifyRuby"
 			],
 			[
 				"copy",
@@ -1096,6 +1096,7 @@
 	},
 	"file_history":
 	[
+		"/Users/erikguzman/Projects/anime/app/models/user.rb",
 		"/Users/erikguzman/Projects/anime/app/controllers/application_controller.rb",
 		"/Users/erikguzman/Projects/anime/app/controllers/anime_shows_controller.rb",
 		"/Users/erikguzman/Projects/anime/db/schema.rb",
@@ -1122,7 +1123,6 @@
 		"/Users/erikguzman/Projects/anime/app/controllers/update_shows_controller.rb",
 		"/Users/erikguzman/Projects/anime/app/controllers/user_seen_episodes_controller.rb",
 		"/Users/erikguzman/Projects/anime/config/routes.rb",
-		"/Users/erikguzman/Projects/anime/app/models/user.rb",
 		"/Users/erikguzman/Projects/anime/db/migrate/20130617044132_add_confirmed_to_user.rb",
 		"/Users/erikguzman/Projects/anime/app/views/pages/get_confirmed.htmlerb",
 		"/Users/erikguzman/Projects/anime/Gemfile",
@@ -1443,7 +1443,9 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage"
+							"syntax": "Packages/Rails/Ruby on Rails.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1515,8 +1517,8 @@
 						"selection":
 						[
 							[
-								2943,
-								2943
+								1827,
+								1827
 							]
 						],
 						"settings":
@@ -1589,6 +1591,10 @@
 		"selected_items":
 		[
 			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
 				"layapp",
 				"app/views/layouts/application.html.erb"
 			],
@@ -1607,10 +1613,6 @@
 			[
 				"appcon",
 				"app/controllers/application_controller.rb"
-			],
-			[
-				"user",
-				"app/models/user.rb"
 			],
 			[
 				"add",
