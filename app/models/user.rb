@@ -18,7 +18,7 @@ class User < ActiveRecord::Base
   end
 
   def unseen_anime_show_episodes
-    anime_show_episodes.where("episodes.id NOT IN (?)", unseen_episode_ids)
+    anime_show_episodes.where("episodes.id NOT IN (?)", unseen_episode_ids).reorder('created_at DESC')
   end
 
   def is_subscribed?(show)
