@@ -1,0 +1,70 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require base
+ *= require skeleton
+ *= require_self
+ *= require_tree .
+ */
+.text-center {
+    text-align: center;
+}
+
+.banner-cell {
+    border-left: 2px;
+    border-bottom: 2px;
+    border-style: solid;
+    background: #000;
+    height: 275px;
+    margin: auto;
+    width: 758px;
+    background-image: image-url('twgok-gray.jpeg');
+    background-repeat:no-repeat;
+}
+
+.cell {
+    border-width: 2px;
+    border-style: solid;
+}
+
+.top-right-cell {
+    border-left: 2px;
+    border-bottom: 2px;
+    border-style: solid;
+}
+
+.bottom-right-cell {
+    border-left: 2px;
+    border-top: 2px;
+    border-style: solid;
+}
+
+.two-hundred {
+    height: 200px;
+    margin: auto;
+}
+
+.three-hundred {
+    height: 300px;
+    margin: auto;
+}
+
+.title {
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    margin: auto;
+}
+
+.logo {
+    line-height: 100px !important;
+}

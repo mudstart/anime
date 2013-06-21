@@ -2,10 +2,5 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  title: "Anime Watcher"
   hello: "Hello world"
-  breadcrumbs:
-    application:
-      index: "Index"
-    examples:
-      index: "Examples"
-      show: "Example"

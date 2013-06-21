@@ -1,102 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Anime" %></title>
-    <%= csrf_meta_tags %>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
-    <!--[if lt IE 9]>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
-    <![endif]-->
+	<!-- Uncomment to make IE8 render like IE7 -->
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
 
-    <%= stylesheet_link_tag "application", :media => "all" %>
+	<!-- Set the viewport width to device width for mobile -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 
-    <!-- For third-generation iPad with high-resolution Retina display: -->
-    <!-- Size should be 144 x 144 pixels -->
-    <%#= favicon_link_tag 'images/apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
 
-    <!-- For iPhone with high-resolution Retina display: -->
-    <!-- Size should be 114 x 114 pixels -->
-    <%#= favicon_link_tag 'images/apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
+	<!-- Included CSS Files -->
+	<%= stylesheet_link_tag    "application" %>
 
-    <!-- For first- and second-generation iPad: -->
-    <!-- Size should be 72 x 72 pixels -->
-    <%#= favicon_link_tag 'images/apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
+	<!-- Included JS Files  -->
+	<%= javascript_include_tag "application" %>
 
-    <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-    <!-- Size should be 57 x 57 pixels -->
-    <%#= favicon_link_tag 'images/apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
-
-    <!-- For all other devices -->
-    <!-- Size should be 32 x 32 pixels -->
-    <%#= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
-    <script src="http://jwpsrv.com/library/wsal1LTbEeKDUSIACqoQEQ.js"></script>
-  </head>
-  <body>
-
-    <div id="mobile-header" class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <a id="responsive-menu-button" href="#sidr-main" class="btn">Menu</a>
-      </div>
-    </div>
-
-    <div id="navigation" class="navbar navbar-inverse">
-      <div class="navbar-inner">
-        <nav class="nav">
-            <ul class="nav">
-                <li><%= link_to "Home", root_path  %></li>
-                <li class="dropdown">
-                    <%= link_to 'Anime Shows', anime_shows_path %>
-                </li>
-                <% if user_signed_in? %>
-                  <li><%= link_to "Your Subscriptions", subscriptions_path  %></li>
-                  <li><%= link_to "Sign Out", destroy_user_session_path, :method => :delete  %></li>
-                <% else %>
-                  <li><%= link_to "Sign In", new_user_session_path %></li>
-                <% end %>
-            </ul>
-        </nav>
-      </div>
-    </div>
-
-    <div class="container-fluid">
-      <div class="row-fluid">
-
-        <%= render 'layouts/side_nav' %>
-
-        <div class="span9">
-          <%= bootstrap_flash %>
-          <%#= render_breadcrumbs %>
-          <%= yield %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <div class="container cell">
+        <div class="row half-bottom">
+            <div class="sixteen columns omega">
+                <div class="banner-cell">
+                </div>
+            </div>
+            <div class="title top-right-cell one-third column omega text-center"><h3 class="logo">I HAZ ANIME</h3></div>
         </div>
-      </div><!--/row-->
-
-      <footer>
-        <p>&copy; Company 2013</p>
-      </footer>
-
-    </div> <!-- /container -->
-
-    <!-- Modal -->
-    <div id="modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Episode Quick Look</h3>
-      </div>
-      <div class="modal-body">
-
-      </div>
-      <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-      </div>
-    </div>
-
-    <!-- Javascripts
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <%= javascript_include_tag "application" %>
-  </body>
+        <div class="row">
+            <div class="eight columns cell omega two-hundred ">
+                <h3 class="text-center half-bottom">Watch Your Anime's</h3>
+                <div class="column">
+                    <ul class="disc">
+                        <li>Subscribe to the shows you watch</li>
+                        <li>Keep track of what shows you have seen</li>
+                        <li>Find out when new episodes are released</li>
+                        <li>Add shows that you cant find</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="eight columns cell two-hundred ">
+                <h3 class="text-center half-bottom">Discover New Obsessions</h3>
+                <div class="column">
+                    <ul class="disc">
+                        <li>Browse New Shows</li>
+                        <li>Find out what others are watching</li>
+                        <li>See what your friend are watching</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row half-bottom">
+            <div class="one-third column cell omega three-hundred">Sign In or Sign up</div>
+            <div class="two-thirds column cell three-hundred omega">
+                <h3 class="text-center half-bottom">The Story Arc</h3>
+                <div class="column">
+                    <p>
+                        Lately I have been finding it increasingly harder and harder to
+                        keep up with the animes I want to watch. As the days go on and new
+                        episodes come out my browser's tab bar becomes increasingly larger and larger
+                        in order to catalog which episodes I haven't watched. After awhile I asked myself,
+                        "why cant this be easier?".
+                    </p>
+                    <p>
+                        So in the end I decided to make my own site.
+                        With one goal, make anime watching easier. Why cant we keep track of our shows,
+                        discover new great animes? Find out what shows are most popular?
+                        Find out what your friends are watching and easily recommend new shows to them.
+                    </p>
+                    <p>
+                        A website should be as enjoyable as the anime your watching.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div><!-- container -->
+    <%#= yield %>
+</body>
 </html>

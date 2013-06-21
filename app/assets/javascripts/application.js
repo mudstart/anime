@@ -12,12 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require twitter/bootstrap
+//= require foundation
 //= require_tree .
 
 $().ready(function() {
-    $('#responsive-menu-button').sidr({
-      name: 'sidr-main',
-      source: '#navigation'
-    });
+
 });

@@ -13,7 +13,6 @@ gem "paperclip"
 gem "will_paginate"
 gem 'nokogiri'
 gem 'high_voltage'
-gem "twitter-bootstrap-rails"
 gem 'exception_notification'
 gem 'delayed_job_active_record'
 gem 'daemons'
@@ -49,6 +48,7 @@ group :assets do
   gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'zurb-foundation'
 end
 
 gem 'jquery-rails'
