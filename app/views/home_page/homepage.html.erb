@@ -1,8 +1,31 @@
-<h1 class="text-center">Newest Unseen Episodes</h1>
-<% if homepage_episodes.empty? %>
-    <p class="lead">Looks like you have free time now, go do something constructive</p>
-<% else %>
-    <ul class="thumbnails">
-        <%= render homepage_episodes %>
-    </ul>
-<% end -%>
+<div class="row">
+    <div class="sixteen columns omega">
+        <div class="banner-cell">
+        </div>
+    </div>
+    <div class="title top-right-cell one-third column omega text-center"><h3 class="logo">I HAZ ANIME</h3></div>
+</div>
+<div class="row">
+    <div class="eight columns cell omega two-hundred ">
+        <h4 class="watch-right-cell text-center">Watch your animes</h4>
+        <h5 class="watch-left-cell text-center">Mark a watched episode</h5>
+        <%= image_tag 'computer.jpg', :class => 'scale-with-grid', :style => 'height: 100%;'  %>
+    </div>
+    <div class="eight columns cell two-hundred discover_cell">
+        <h3 class="text-center half-bottom add-top">Discover New Obsessions</h3>
+        <div class="column">
+            <ul class="disc">
+                <li>Browse New Shows</li>
+                <li>Find out what others are watching</li>
+                <li>See what your friend are watching</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row half-bottom">
+    <div class="one-third column cell omega three-hundred">Sign In or Sign up</div>
+    <div class="two-thirds column cell three-hundred omega frustration-cell">
+        <h4 class="remove-bottom frustration-text">Taking the frustration out of watching Anime</h4>
+        <%= image_tag 'big-anger-bw.jpg', :class => 'scale-with-grid' %>
+    </div>
+</div>

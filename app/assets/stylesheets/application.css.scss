@@ -13,6 +13,24 @@
  *= require_self
  *= require_tree .
  */
+ @font-face {
+   font-family: 'Manga Temple';
+   src: url('/assets/mangat.ttf');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ body {
+    background-image: image-url('black_paper.png');
+}
+
+.container {
+    background-image: image-url('natural_paper.png');
+    padding-left: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em;
+}
+
 .text-center {
     text-align: center;
 }
@@ -24,7 +42,7 @@
     background: #000;
     height: 275px;
     margin: auto;
-    width: 758px;
+    width: 800px;
     background-image: image-url('twgok-gray.jpeg');
     background-repeat:no-repeat;
 }
@@ -67,4 +85,43 @@
 
 .logo {
     line-height: 100px !important;
+}
+
+.frustration-cell {
+    background-color: gray;
+}
+
+.frustration-text {
+    width: 9em;
+    position: absolute;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 14em;
+    margin-top: .5em;
+    background-color: white;
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border: 1px solid #800000;
+    text-align: center;
+}
+
+.discover_cell {
+    background-size: 100%;
+    background-image: image-url('thin_dramatic_stencil_landscape1.jpg');
+    background-repeat:no-repeat;
+}
+
+.watch-right-cell {
+    width: 4em;
+    position:absolute !important;
+    margin-left: 12.5em;
+    margin-top: 3em;
+}
+
+.watch-left-cell {
+    width: 5em;
+    position:absolute !important;
+    margin-left: 0.9em;
+    margin-top: 4em;
 }

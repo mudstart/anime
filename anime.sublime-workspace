@@ -4,24 +4,40 @@
 		"selected_items":
 		[
 			[
-				"pa",
-				"padding-top"
-			],
-			[
 				"mar",
 				"margin-top"
 			],
 			[
+				"image",
+				"image_tag"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"border",
+				"border-width"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
 				"back",
-				"background-image"
+				"background-color"
+			],
+			[
+				"image_",
+				"image_tag  (function)"
+			],
+			[
+				"pa",
+				"padding-top"
 			],
 			[
 				"pos",
 				"position"
-			],
-			[
-				"border",
-				"border-style"
 			],
 			[
 				"bor",
@@ -46,10 +62,6 @@
 			[
 				"over",
 				"overflow"
-			],
-			[
-				"padd",
-				"padding-left"
 			],
 			[
 				"padding",
@@ -280,10 +292,6 @@
 				"AnimeShow"
 			],
 			[
-				"image",
-				"image_url"
-			],
-			[
 				"ima",
 				"image_url"
 			],
@@ -506,14 +514,6 @@
 			[
 				"up",
 				"update_attribute"
-			],
-			[
-				"day",
-				"days_ago"
-			],
-			[
-				"vi",
-				"viewed_stacks"
 			]
 		]
 	},
@@ -531,7 +531,7 @@
 			"file": "app/views/layouts/application.html.erb",
 			"settings":
 			{
-				"buffer_size": 3765,
+				"buffer_size": 2524,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "app/assets/stylesheets/application.css.scss",
 			"settings":
 			{
-				"buffer_size": 1397,
+				"buffer_size": 1854,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,7 +555,7 @@
 			"file": "vendor/assets/stylesheets/base.css.scss",
 			"settings":
 			{
-				"buffer_size": 9001,
+				"buffer_size": 9130,
 				"line_ending": "Unix"
 			}
 		}
@@ -566,6 +566,14 @@
 		"height": 167.0,
 		"selected_items":
 		[
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
 			[
 				"move",
 				"File: Move"
@@ -585,14 +593,6 @@
 			[
 				"branch",
 				"Git: New Branch"
-			],
-			[
-				"git com",
-				"Git: Commit"
-			],
-			[
-				"git add",
-				"Git: Add..."
 			],
 			[
 				"git push",
@@ -1242,6 +1242,12 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"h3",
+			"70px",
+			"bottom",
+			"margin",
+			"h3",
+			"mg",
 			"h5",
 			"<h5 class=\"text-center\">Benefits</h5>\n",
 			"clas",
@@ -1363,13 +1369,7 @@
 			"Time.now",
 			"pin_chisel",
 			"can_chisel_post",
-			"twitter",
-			".includes",
-			":users, :likes",
-			"commentable",
-			"analytics = Analytics.new",
-			"bags",
-			"		user.bags.count.should eq 1\nset_active_at"
+			"twitter"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1394,7 +1394,6 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1430,15 +1429,15 @@
 					"file": "app/views/layouts/application.html.erb",
 					"settings":
 					{
-						"buffer_size": 3765,
+						"buffer_size": 2524,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2565,
-								2565
+								1383,
+								1383
 							]
 						],
 						"settings":
@@ -1448,8 +1447,8 @@
 							"translate_tabs_to_spaces": true,
 							"word_wrap": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 479.0,
+						"translation.x": 29.0,
+						"translation.y": 139.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1459,15 +1458,15 @@
 					"file": "app/assets/stylesheets/application.css.scss",
 					"settings":
 					{
-						"buffer_size": 1397,
+						"buffer_size": 1854,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1380,
-								1380
+								1849,
+								1849
 							]
 						],
 						"settings":
@@ -1477,7 +1476,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 289.0,
+						"translation.y": 649.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1505,7 +1504,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 775.0,
+						"translation.y": 1668.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1515,15 +1514,15 @@
 					"file": "vendor/assets/stylesheets/base.css.scss",
 					"settings":
 					{
-						"buffer_size": 9001,
+						"buffer_size": 9130,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8634,
-								8634
+								8995,
+								8995
 							]
 						],
 						"settings":
@@ -1532,7 +1531,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1400.0,
+						"translation.y": 1335.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
