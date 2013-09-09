@@ -20,6 +20,13 @@
    font-style: normal;
  }
 
+ @font-face {
+   font-family: 'Manga Temple';
+   src: url('/assets/mangatb.ttf');
+   font-weight: bold;
+   font-style: normal;
+ }
+
  body {
     background-image: image-url('black_paper.png');
 }
@@ -35,21 +42,34 @@
     text-align: center;
 }
 
-.banner-cell {
-    border-left: 2px;
-    border-bottom: 2px;
-    border-style: solid;
-    background: #000;
-    height: 275px;
+.one-hundred {
+    height: 100px;
     margin: auto;
-    width: 800px;
-    background-image: image-url('twgok-gray.jpeg');
-    background-repeat:no-repeat;
+}
+
+.two-hundred {
+    height: 200px;
+    margin: auto;
+}
+
+.three-hundred {
+    height: 300px;
+    margin: auto;
+}
+
+.inline {
+    display: inline;
 }
 
 .cell {
     border-width: 2px;
     border-style: solid;
+}
+
+.draw-cell {
+    border-width: 2px;
+    border-style: solid;
+    background-color: #fff;
 }
 
 .top-right-cell {
@@ -61,17 +81,38 @@
 .bottom-right-cell {
     border-left: 2px;
     border-top: 2px;
+    border-bottom: 0px;
+    border-right: 0;
     border-style: solid;
 }
 
-.two-hundred {
-    height: 200px;
-    margin: auto;
+.bottom-left-cell {
+    border-left: 0px;
+    border-top: 2px;
+    border-bottom: 0px;
+    border-right: 2px;
+    border-style: solid;
 }
 
-.three-hundred {
-    height: 300px;
+.colored-text {
+    color: #8F1600;
+}
+
+.vertical-center-align {
+    line-height: 400%;
+}
+
+.banner-cell {
+    border-left: 2px;
+    border-bottom: 2px;
+    border-style: solid;
+    background: #000;
+    height: 275px;
     margin: auto;
+    width: 800px;
+    background-image: image-url('twgok-gray.jpeg');
+    /*background-repeat:no-repeat;*/
+    background-position: 50% 0%;
 }
 
 .title {
@@ -85,6 +126,16 @@
 
 .logo {
     line-height: 100px !important;
+    color: #8F1600;
+}
+
+.homepage_login {
+    position: absolute;
+    left: 3.2em;
+    top: 7.9em;
+    width: 227px !important;
+    padding-left: 1em;
+    background-color: #fff;
 }
 
 .frustration-cell {
@@ -94,6 +145,8 @@
 .frustration-text {
     width: 9em;
     position: absolute;
+    padding-top: 4px;
+    padding-bottom: 4px;
     padding-left: 4px;
     padding-right: 4px;
     margin-left: 14em;
@@ -113,15 +166,19 @@
 }
 
 .watch-right-cell {
-    width: 4em;
+    width: 5em;
     position:absolute !important;
-    margin-left: 12.5em;
+    margin-left: 12.2em;
     margin-top: 3em;
 }
 
 .watch-left-cell {
-    width: 5em;
+    width: 6em;
     position:absolute !important;
-    margin-left: 0.9em;
-    margin-top: 4em;
+    margin-left: 1em;
+    margin-top: 4.5em;
+}
+
+#selectors{
+    height: 4em;
 }

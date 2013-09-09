@@ -1,0 +1,23 @@
+<div class="row add-top">
+    <div class="twelve columns alpha">
+        <div class="twelve columns draw-cell two-hundred add-bottom"></div>
+        <div class="twelve columns draw-cell add-top" id="selectors">
+            <p class="text-center">Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <div class="column omega">
+        <div class="four columns draw-cell three-hundred omega">
+            <div class="text-center half-top">
+                <p><%= gravatar(current_user, 100) %></p>
+                <ul>
+                    <li><%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %></li>
+                    <li><%= link_to 'Settings', '#' %></li>
+                    <li><%= link_to 'Dashbaord', '#' %></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+
+</div>

@@ -1,0 +1,11 @@
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :class => 'half-top half-bottom' }) do |f| %>
+  <%= f.email_field :email, :autofocus => true , :placeholder => 'Email Address'%>
+
+  <%= f.password_field :password, :placeholder => 'Password', :class => 'half-bottom' %>
+
+  <% if devise_mapping.rememberable? -%>
+    <div><%= f.check_box :remember_me %> <%= f.label :remember_me, :class => 'inline' %></div>
+  <% end -%>
+
+  <div class="remove-bottom"><%= f.submit "Sign in", :class => 'remove-bottom' %></div>
+<% end %>

@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="sixteen columns omega">
+        <div class="banner-cell">
+        </div>
+    </div>
+    <div class="title top-right-cell one-third column omega text-center"><h4 class="logo">{I HAZ ANIME}</h4></div>
+    <div class="one-third column homepage_login bottom-left-cell omega"><%= render 'devise/sessions/homepage_form' %></div>
+</div>
+<div class="row">
+    <div class="eight columns cell two-hundred discover_cell omega">
+        <h3 class="text-center half-bottom add-top">Discover New Obsessions</h3>
+        <div class="column">
+            <ul class="disc">
+                <li>Browse New Shows</li>
+                <li>Find out what others are watching</li>
+                <li>See what your friends are watching</li>
+            </ul>
+        </div>
+    </div>
+    <div class="eight columns cell two-hundred ">
+        <h4 class="watch-right-cell text-center">Watch your animes</h4>
+        <h6 class="watch-left-cell text-center">Mark a watched episode</h6>
+        <%= image_tag 'computer.jpg', :class => 'scale-with-grid', :style => 'height: 100%;'  %>
+    </div>
+</div>
+<div class="row half-bottom">
+    <div class="one-third column draw-cell omega three-hundred">
+        <div class="column text-center add-top">
+            <h3>Start watching today</h3>
+            <p>Register now to request access and start watching your animes</p>
+            <p><%= link_to "Register", new_registration_path(resource_name), :class => 'button' %></p>
+        </div>
+    </div>
+    <div class="two-thirds column cell omega frustration-cell three-hundred">
+        <h4 class="remove-bottom frustration-text">Taking the frustration out of watching Anime</h4>
+        <%= image_tag 'big-anger-bw.jpg', :class => 'scale-with-grid' %>
+    </div>
+</div>
