@@ -19,6 +19,7 @@ gem 'daemons'
 gem 'paperclip-aws'
 gem "figaro"
 gem 'dj_mon'
+
 group :production do
   gem 'mysql2'
 end
@@ -29,6 +30,8 @@ group :test, :development do
   gem 'sqlite3'
   gem 'factory_girl_rails', ' 1.7.0'
   gem 'faker'
+  gem 'capistrano-rails',   '~> 1.1', require: false
+  gem 'capistrano-bundler', '~> 1.1', require: false
 end
 
 group :test do
@@ -62,4 +65,4 @@ gem 'jquery-rails'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
+gem 'capistrano', '~> 3.0', require: false, group: :development

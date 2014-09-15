@@ -16,6 +16,7 @@
 
 /config/database.yml
 /config/deploy.rb
+/old_cap
 
 # Ignore application configuration
 /config/application.yml
