@@ -32,6 +32,7 @@ group :test, :development do
   gem 'faker'
   gem 'capistrano-rails',   '~> 1.1', require: false
   gem 'capistrano-bundler', '~> 1.1', require: false
+  gem 'rvm1-capistrano3', :require => false
 end
 
 group :test do
