@@ -1,6 +1,5 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  add_breadcrumb :index, :root_path
 
   def is_admin?
     current_user.id == 1
