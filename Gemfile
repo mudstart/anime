@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
 gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
@@ -29,10 +28,11 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'sqlite3'
-  gem 'factory_girl_rails', ' 1.7.0'
+  gem 'factory_girl_rails'
   gem 'faker'
   gem 'capistrano-rails',   '~> 1.1', require: false
   gem 'capistrano-bundler', '~> 1.1', require: false
+  gem 'capistrano-rvm', require: false
   gem 'rvm1-capistrano3', :require => false
 end
 
