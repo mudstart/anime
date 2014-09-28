@@ -22,6 +22,7 @@ gem 'dj_mon'
 
 group :production do
   gem 'mysql2'
+  gem 'passenger'
 end
 
 group :test, :development do
