@@ -39,7 +39,7 @@ group :test, :development do
 end
 
 group :test do
-  gem "guard-rspec"
+  #gem "guard-rspec"
   gem 'rb-fsevent', '~> 0.9'
   gem 'shoulda-matchers', '2.0.0'
   gem 'database_cleaner'
