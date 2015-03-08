@@ -1,7 +1,6 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
-  config.secret_key = ENV['DEVISE_SECRET']
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
@@ -83,7 +82,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = "7954f705a5730c840b17a0c51eb49ced349242f9c246b925a236ff94f7a25fb25c852bee7bf01a09935195972fe2e571d689c972ebf1a9d8ea0060f6d612f8b7"
+  # config.pepper = "a38fb566849f581592d1f312ea3dada0c32d9292e360b3b4f6d42cd3cb15855fe859a9c6775ea52c2b8d419c4076083600ab208d713ad1210e4d4fbd012897bb"
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
