@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-ruby '1.8.7'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -19,20 +18,27 @@ gem 'daemons'
 gem 'paperclip-aws'
 gem "figaro"
 gem 'dj_mon'
+
 group :production do
   gem 'mysql2'
+  gem 'passenger'
 end
 
 group :test, :development do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'sqlite3'
-  gem 'factory_girl_rails', ' 1.7.0'
+  gem 'factory_girl_rails'
   gem 'faker'
+  gem 'capistrano-rails',   '~> 1.1', require: false
+  gem 'capistrano-bundler', '~> 1.1', require: false
+  gem 'capistrano-rvm', require: false
+  gem 'capistrano-passenger', require: false
+  gem 'rvm1-capistrano3', :require => false
 end
 
 group :test do
-  gem "guard-rspec"
+  #gem "guard-rspec"
   gem 'rb-fsevent', '~> 0.9'
   gem 'shoulda-matchers', '2.0.0'
   gem 'database_cleaner'
@@ -63,7 +69,4 @@ gem 'jquery-rails'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-gem 'capistrano'
-
-# To use debugger
-gem 'ruby-debug'
+gem 'capistrano', '~> 3.0', require: false, group: :development
