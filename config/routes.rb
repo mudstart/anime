@@ -3,7 +3,10 @@ AnimeErikkatCom::Application.routes.draw do
 
   mount DjMon::Engine => 'dj_mon'
 
-  resources :anime_shows
+  resources :anime_shows do
+    resource :update_show, :only => [:update]
+  end
+
   resource :home_page
   resources :confirm_users, :only => [:index, :update]
 
@@ -12,7 +15,6 @@ AnimeErikkatCom::Application.routes.draw do
   resources :episodes do
     resources :user_seen_episodes, :only => [:create]
     resource :download_episode, :only => [:create, :destroy]
-    resource :update_show, :only => [:update]
   end
 
   root :to => 'home_page#homepage', :id => 'homepage'
